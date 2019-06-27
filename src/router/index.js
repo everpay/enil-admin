@@ -91,59 +91,59 @@ export const constantRoutes = [
   },
 
   {
-    path: '/nested',
+    path: '/settings',
     component: Layout,
-    redirect: '/nested/menu1',
-    name: 'Nested',
+    redirect: '/settings/profile',
+    name: 'Settings',
     meta: {
-      title: 'Nested',
-      icon: 'nested'
+      title: 'Settings',
+      icon: 'settings'
     },
     children: [
       {
-        path: 'menu1',
-        component: () => import('@/views/nested/menu1/index'), // Parent router-view
-        name: 'Menu1',
-        meta: { title: 'Menu1' },
+        path: 'account',
+        component: () => import('@/views/settings/account/index'), // Parent router-view
+        name: 'Account',
+        meta: { title: 'Account' },
         children: [
           {
-            path: 'menu1-1',
-            component: () => import('@/views/nested/menu1/menu1-1'),
-            name: 'Menu1-1',
-            meta: { title: 'Menu1-1' }
+            path: 'profile',
+            component: () => import('@/views/settings/account/profile'),
+            name: 'Profile',
+            meta: { title: 'Profile' }
           },
           {
-            path: 'menu1-2',
-            component: () => import('@/views/nested/menu1/menu1-2'),
-            name: 'Menu1-2',
-            meta: { title: 'Menu1-2' },
+            path: 'business',
+            component: () => import('@/views/settings/account/business'),
+            name: 'Business',
+            meta: { title: 'Business Info' },
             children: [
               {
-                path: 'menu1-2-1',
-                component: () => import('@/views/nested/menu1/menu1-2/menu1-2-1'),
-                name: 'Menu1-2-1',
-                meta: { title: 'Menu1-2-1' }
+                path: 'my-money',
+                component: () => import('@/views/settings/account/my-money'),
+                name: 'My Money',
+                meta: { title: 'My Money' }
               },
               {
-                path: 'menu1-2-2',
-                component: () => import('@/views/nested/menu1/menu1-2/menu1-2-2'),
-                name: 'Menu1-2-2',
-                meta: { title: 'Menu1-2-2' }
+                path: 'notifications',
+                component: () => import('@/views/settings/account/notifications'),
+                name: 'Notifications',
+                meta: { title: 'Notifications' }
               }
             ]
           },
           {
-            path: 'menu1-3',
-            component: () => import('@/views/nested/menu1/menu1-3'),
-            name: 'Menu1-3',
-            meta: { title: 'Menu1-3' }
+            path: 'selling-tools',
+            component: () => import('@/views/settings/account/selling-tools'),
+            name: 'Selling Tools',
+            meta: { title: 'Selling Tools' }
           }
         ]
       },
       {
-        path: 'menu2',
-        component: () => import('@/views/nested/menu2/index'),
-        meta: { title: 'menu2' }
+        path: 'account-summary',
+        component: () => import('@/views/settings/account-summary/index'),
+        meta: { title: 'Account Summary' }
       }
     ]
   },
