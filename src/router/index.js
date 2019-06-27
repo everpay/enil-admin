@@ -79,19 +79,31 @@ export const constantRoutes = [
         path: 'dashboard',
         component: () => import('@/views/dashboard/index'),
         name: 'Dashboard',
-        meta: { title: 'Dashboard', icon: 'dashboard', affix: true }
+        meta: { title: 'Activity', icon: 'dashboard', affix: true }
       }
     ]
   },
-   {
+  {
     path: '/history',
     component: Layout,
     children: [
       {
         path: 'history/index',
         component: () => import('@/views/history/index'),
-        name: 'History',
-        meta: { title: 'Transfer History', icon: 'list', affix: true }
+        name: 'Transfer History',
+        meta: { title: 'History', icon: 'list', affix: true }
+      }
+    ]
+  },
+{
+    path: '/recipients',
+    component: Layout,
+    children: [
+      {
+        path: 'recipients/index',
+        component: () => import('@/views/recipients/index'),
+        name: 'Recipients',
+        meta: { title: 'Recipients', icon: 'persons', affix: true }
       }
     ]
   },
