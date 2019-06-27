@@ -54,7 +54,46 @@ export const constantRoutes = [
       meta: { title: 'Dashboard', icon: 'dashboard' }
     }]
   },
+  
+ {
+    path: '/elektropay-account',
+    component: Layout,
+    children: [
+      {
+        path: 'elektropay-account/dashboard/index',
+        name: 'Balances',
+        component: () => import('@/views/elektropay-account/dashboard/index'),
+        meta: { title: 'Elektropay Account', icon: 'form' }
+      }
+    ]
+  },
 
+{
+    path: '/history',
+    component: Layout,
+    children: [
+      {
+        path: 'index',
+        name: 'History',
+        component: () => import('@/views/history/index'),
+        meta: { title: 'Transfer History', icon: 'form' }
+      }
+    ]
+  },
+
+    {
+    path: '/recipients',
+    component: Layout,
+    children: [
+      {
+        path: 'index',
+        name: 'Recipients',
+        component: () => import('@/views/recipients/index'),
+        meta: { title: 'Recipients', icon: 'users' }
+      }
+    ]
+  },
+  
   {
     path: '/example',
     component: Layout,
