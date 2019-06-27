@@ -93,7 +93,7 @@ export const constantRoutes = [
   {
     path: '/settings',
     component: Layout,
-    redirect: '/settings/index',
+    redirect: '/settings',
     name: 'Settings',
     meta: {
       title: 'Settings',
