@@ -83,18 +83,6 @@ export const constantRoutes = [
       }
     ]
   },
-{
-    path: '/elektroaccount',
-    component: Layout,
-    children: [
-      {
-        path: 'elektroaccount/index',
-        component: () => import('@/views/elektroaccount/dashboard/index'),
-        name: 'Elektropay',
-        meta: { title: 'Balances', icon: 'money', affix: true }
-      }
-    ]
-  },
   {
     path: '/history',
     component: Layout,
