@@ -83,6 +83,18 @@ export const constantRoutes = [
       }
     ]
   },
+   {
+    path: '/history',
+    component: Layout,
+    children: [
+      {
+        path: 'history/index',
+        component: () => import('@/views/history/index'),
+        name: 'History',
+        meta: { title: 'Transfer History', icon: 'list', affix: true }
+      }
+    ]
+  },
   {
     path: '/documentation',
     component: Layout,
