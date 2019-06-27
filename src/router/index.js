@@ -88,7 +88,7 @@ export const constantRoutes = [
     component: Layout,
     children: [
       {
-        path: 'elektro-account',
+        path: 'index',
         component: () => import('@/views/elektro-account/dashboard/index'),
         name: 'Elektropay Account',
         meta: { title: 'Balances', icon: 'money', affix: true }
