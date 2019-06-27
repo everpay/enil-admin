@@ -107,37 +107,6 @@ export const constantRoutes = [
       }
     ]
   },
-{
-    path: '/recipients',
-    component: Layout,
-    redirect: '/recipients/list',
-    name: 'Recipients',
-    meta: {
-      title: 'Recipients',
-      icon: 'peoples'
-    },
-    children: [
-      {
-        path: 'create',
-        component: () => import('@/views/recipients/create'),
-        name: 'CreateRecipient',
-        meta: { title: 'Create Recipient', icon: 'edit' }
-      },
-      {
-        path: 'edit/:id(\\d+)',
-        component: () => import('@/views/recipients/edit'),
-        name: 'EditRecipient',
-        meta: { title: 'Edit Recipient', noCache: true, activeMenu: '/recipients/list' },
-        hidden: true
-      },
-      {
-        path: 'list',
-        component: () => import('@/views/recipients/list'),
-        name: 'RecipientsList',
-        meta: { title: 'Reciever List', icon: 'list' }
-      }
-    ]
-  },
   {
     path: '/documentation',
     component: Layout,
