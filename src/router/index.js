@@ -84,7 +84,7 @@ export const constantRoutes = [
     ]
   },
 {
-    path: '/elektro-account',
+    path: '/elektroaccount',
     component: Layout,
     children: [
       {
