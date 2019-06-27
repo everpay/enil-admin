@@ -83,6 +83,18 @@ export const constantRoutes = [
       }
     ]
   },
+{
+    path: '/elektropay',
+    component: Layout,
+    children: [
+      {
+        path: 'elektropay/index',
+        component: () => import('@/views/elektropay/index'),
+        name: 'Elektropay',
+        meta: { title: 'Balances', icon: 'money', affix: true }
+      }
+    ]
+  },
    {
     path: '/history',
     component: Layout,
@@ -115,7 +127,7 @@ export const constantRoutes = [
         path: 'payments/index',
         component: () => import('@/views/payments/index'),
         name: 'Payments',
-        meta: { title: 'Payments', icon: 'money', affix: true }
+        meta: { title: 'Payments', icon: 'shopping', affix: true }
       }
     ]
   },
