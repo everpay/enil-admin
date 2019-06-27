@@ -91,7 +91,19 @@ export const constantRoutes = [
         path: 'history/index',
         component: () => import('@/views/history/index'),
         name: 'History',
-        meta: { title: 'Transfer History', icon: 'list', affix: true }
+        meta: { title: 'Transfers', icon: 'list', affix: true }
+      }
+    ]
+  },
+     {
+      path: '/payments',
+    component: Layout,
+    children: [
+      {
+        path: 'payments/index',
+        component: () => import('@/views/payments/index'),
+        name: 'Payments',
+        meta: { title: 'Payments', icon: 'money', affix: true }
       }
     ]
   },
