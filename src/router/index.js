@@ -88,7 +88,7 @@ export const constantRoutes = [
     component: Layout,
     children: [
       {
-        path: 'history/index',
+        path: 'index',
         component: () => import('@/views/history/index'),
         name: 'Transfer History',
         meta: { title: 'History', icon: 'list', affix: true }
