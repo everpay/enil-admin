@@ -63,7 +63,7 @@ export const constantRoutes = [
         path: 'elektropay-account/dashboard/index',
         name: 'Balances',
         component: () => import('@/views/elektropay-account/dashboard/index'),
-        meta: { title: 'Elektropay Account', icon: 'form' }
+        meta: { title: 'Elektropay Account', icon: 'money' }
       }
     ]
   },
@@ -76,7 +76,7 @@ export const constantRoutes = [
         path: 'index',
         name: 'History',
         component: () => import('@/views/history/index'),
-        meta: { title: 'Transfer History', icon: 'form' }
+        meta: { title: 'Transfer History', icon: 'list' }
       }
     ]
   },
@@ -89,7 +89,7 @@ export const constantRoutes = [
         path: 'index',
         name: 'Recipients',
         component: () => import('@/views/recipients/index'),
-        meta: { title: 'Recipients', icon: 'users' }
+        meta: { title: 'Recipients', icon: 'peoples' }
       }
     ]
   },
@@ -136,7 +136,7 @@ export const constantRoutes = [
     name: 'Settings',
     meta: {
       title: 'Settings',
-      icon: 'settings'
+      icon: 'star'
     },
     children: [
       {
@@ -182,7 +182,7 @@ export const constantRoutes = [
       {
         path: 'account-summary',
         component: () => import('@/views/settings/account-summary/index'),
-        meta: { title: 'Account Summary' }
+        meta: { title: 'Account Summary', icon: 'chart' }
       }
     ]
   },
