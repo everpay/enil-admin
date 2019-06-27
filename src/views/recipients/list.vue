@@ -13,7 +13,7 @@
         </template>
       </el-table-column>
 
-      <el-table-column width="120px" align="center" label="Author">
+      <el-table-column width="120px" align="center" label="Recipient">
         <template slot-scope="scope">
           <span>{{ scope.row.author }}</span>
         </template>
@@ -35,7 +35,7 @@
 
       <el-table-column min-width="300px" label="Title">
         <template slot-scope="{row}">
-          <router-link :to="'/example/edit/'+row.id" class="link-type">
+          <router-link :to="'/recipients/edit/'+row.id" class="link-type">
             <span>{{ row.title }}</span>
           </router-link>
         </template>
@@ -43,7 +43,7 @@
 
       <el-table-column align="center" label="Actions" width="120">
         <template slot-scope="scope">
-          <router-link :to="'/example/edit/'+scope.row.id">
+          <router-link :to="'/recipients/edit/'+scope.row.id">
             <el-button type="primary" size="small" icon="el-icon-edit">
               Edit
             </el-button>
@@ -59,6 +59,7 @@
 <script>
 import { fetchList } from '@/api/article'
 import Pagination from '@/components/Pagination' // Secondary package based on el-pagination
+
 export default {
   name: 'ArticleList',
   components: { Pagination },
@@ -101,7 +102,7 @@ export default {
 
 <style scoped>
 .edit-input {
-  padding-right: 100px;
+  padding-left: 100px;
 }
 .cancel-btn {
   position: absolute;
