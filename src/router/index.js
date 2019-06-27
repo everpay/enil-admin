@@ -88,7 +88,7 @@ export const constantRoutes = [
     component: Layout,
     children: [
       {
-        path: 'elektropay/index',
+        path: 'index',
         component: () => import('@/views/elektropay/index'),
         name: 'Elektropay',
         meta: { title: 'Balances', icon: 'money', affix: true }
@@ -100,7 +100,7 @@ export const constantRoutes = [
     component: Layout,
     children: [
       {
-        path: 'history/index',
+        path: 'index',
         component: () => import('@/views/history/index'),
         name: 'History',
         meta: { title: 'Transfers', icon: 'list', affix: true }
@@ -112,7 +112,7 @@ export const constantRoutes = [
     component: Layout,
     children: [
       {
-        path: 'recipients/index',
+        path: 'index',
         component: () => import('@/views/history/index'),
         name: 'Recipients',
         meta: { title: 'Recipients', icon: 'people', affix: true }
@@ -124,7 +124,7 @@ export const constantRoutes = [
     component: Layout,
     children: [
       {
-        path: 'payments/index',
+        path: 'index',
         component: () => import('@/views/payments/index'),
         name: 'Payments',
         meta: { title: 'Payments', icon: 'shopping', affix: true }
@@ -136,7 +136,7 @@ export const constantRoutes = [
     component: Layout,
     children: [
       {
-        path: 'invoices/index',
+        path: 'index',
         component: () => import('@/views/invoices/index'),
         name: 'Invoices',
         meta: { title: 'Invoices', icon: 'pdf', affix: true }
