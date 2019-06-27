@@ -79,7 +79,7 @@ export const constantRoutes = [
         path: 'dashboard',
         component: () => import('@/views/dashboard/index'),
         name: 'Dashboard',
-        meta: { title: 'Dashboard', icon: 'dashboard', affix: true }
+        meta: { title: 'Activity', icon: 'dashboard', affix: true }
       }
     ]
   },
@@ -95,7 +95,19 @@ export const constantRoutes = [
       }
     ]
   },
-     {
+{
+    path: '/recipients',
+    component: Layout,
+    children: [
+      {
+        path: 'recipients/index',
+        component: () => import('@/views/history/index'),
+        name: 'Recipients',
+        meta: { title: 'Recipients', icon: 'people', affix: true }
+      }
+    ]
+  },
+  {
       path: '/payments',
     component: Layout,
     children: [
@@ -104,6 +116,18 @@ export const constantRoutes = [
         component: () => import('@/views/payments/index'),
         name: 'Payments',
         meta: { title: 'Payments', icon: 'money', affix: true }
+      }
+    ]
+  },
+{
+      path: '/invoices',
+    component: Layout,
+    children: [
+      {
+        path: 'invoices/index',
+        component: () => import('@/views/invoices/index'),
+        name: 'Invoices',
+        meta: { title: 'Invoices', icon: 'pdf', affix: true }
       }
     ]
   },
