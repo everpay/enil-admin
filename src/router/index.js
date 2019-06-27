@@ -73,7 +73,7 @@ export const constantRoutes = [
     component: Layout,
     children: [
       {
-        path: 'index',
+        path: 'history/index',
         name: 'History',
         component: () => import('@/views/history/index'),
         meta: { title: 'Transfer History', icon: 'list' }
@@ -81,12 +81,12 @@ export const constantRoutes = [
     ]
   },
 
-    {
+ {
     path: '/recipients',
     component: Layout,
     children: [
       {
-        path: 'index',
+        path: 'recipients/index',
         name: 'Recipients',
         component: () => import('@/views/recipients/index'),
         meta: { title: 'Recipients', icon: 'peoples' }
@@ -132,7 +132,7 @@ export const constantRoutes = [
   {
     path: '/settings',
     component: Layout,
-    redirect: '/settings',
+    redirect: '/settings/account',
     name: 'Settings',
     meta: {
       title: 'Settings',
