@@ -72,7 +72,7 @@ export default {
   display: inline-block;
   font-size: 24px;
   line-height: 60px;
-  margin-left: 8px;
+  margin-left: 0px;
 
   .no-redirect {
     color: #97a8be;
