@@ -79,5 +79,16 @@ export default {
     cursor: text;
       margin-left: -20px;
   }
+  
+element.style {
+}
+.el-breadcrumb__item:last-child .el-breadcrumb__separator {
+    display: none;
+}
+.el-breadcrumb__separator {
+    margin: 0px!important;
+    font-weight: 500;
+    color: #c0c4cc;
+}
 }
 </style>
