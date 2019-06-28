@@ -75,7 +75,7 @@ export default {
   margin-left: 0px;
 
   .no-redirect {
-    color: #97a8be;
+    color: #666666;
     cursor: text;
   }
 }
