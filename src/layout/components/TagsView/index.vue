@@ -4,6 +4,15 @@
   </div>
 </template>
 
+<script>
+import Search from '@/components/HeaderSearch'
+
+export default {
+  components: {
+    Search
+  },
+}
+</script>
 
 <style lang="scss" scoped>
 .tags-view-container {
