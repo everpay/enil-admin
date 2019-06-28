@@ -100,7 +100,7 @@ export default {
     list-style: none;
     position: relative;
     margin: 0;
-    padding-left: 10px!important;
+    padding-left: 30px!important;
     background-color: #fff;
 }
 &
