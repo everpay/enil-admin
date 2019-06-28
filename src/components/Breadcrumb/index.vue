@@ -82,7 +82,7 @@ export default {
   
 element.style {
 }
-.el-breadcrumb__item:last-child .el-breadcrumb__separator {
+.el-breadcrumb__separator {
     display: none;
 }
 .el-breadcrumb__separator {
