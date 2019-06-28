@@ -93,3 +93,15 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.el-menu {
+    border-right: 1px solid #e6e6e6;
+    list-style: none;
+    position: relative;
+    margin: 0;
+    padding-left: 10px!important;
+    background-color: #fff;
+}
+}
+</style>
