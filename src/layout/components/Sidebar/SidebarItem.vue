@@ -95,8 +95,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-..el-menu-item {
+.el-menu-item {
     border-right: 1px solid #e6e6e6;
     list-style: none;
     position: relative;
