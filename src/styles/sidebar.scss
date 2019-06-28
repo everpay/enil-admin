@@ -52,6 +52,12 @@
       width: 100%;
       overflow: hidden;
     }
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: #cecece;
+  text-decoration: none;
+}
 
     .svg-icon {
       margin-right: 18px;
