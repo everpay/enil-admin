@@ -2,19 +2,9 @@
 <div class="d-flex align-items-center position-relative height-lg-100vh">
       <div class="col-lg-5 col-xl-4 d-none d-lg-flex align-items-center gradient-half-primary-v1 height-lg-100vh px-0">
         <div class="w-100 p-5">
-          <!-- SVG Quote -->
           <figure class="text-center mb-5 mx-auto">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px"
-               viewBox="0 0 8 8" style="enable-background:new 0 0 8 8;" xml:space="preserve">
-              <path class="fill-white" d="M3,1.3C2,1.7,1.2,2.7,1.2,3.6c0,0.2,0,0.4,0.1,0.5c0.2-0.2,0.5-0.3,0.9-0.3c0.8,0,1.5,0.6,1.5,1.5c0,0.9-0.7,1.5-1.5,1.5
-                C1.4,6.9,1,6.6,0.7,6.1C0.4,5.6,0.3,4.9,0.3,4.5c0-1.6,0.8-2.9,2.5-3.7L3,1.3z M7.1,1.3c-1,0.4-1.8,1.4-1.8,2.3
-                c0,0.2,0,0.4,0.1,0.5c0.2-0.2,0.5-0.3,0.9-0.3c0.8,0,1.5,0.6,1.5,1.5c0,0.9-0.7,1.5-1.5,1.5c-0.7,0-1.1-0.3-1.4-0.8
-                C4.4,5.6,4.4,4.9,4.4,4.5c0-1.6,0.8-2.9,2.5-3.7L7.1,1.3z"/>
-            </svg>
+            
           </figure>
-          <!-- End SVG Quote -->
-
-          <!-- Testimonials Carousel Main -->
           <div id="testimonialsNavMain" class="js-slick-carousel u-slick mb-4"
                data-infinite="true"
                data-autoplay="true"
@@ -22,59 +12,44 @@
                data-fade="true"
                data-nav-for="#testimonialsNavPagination">
             <div class="js-slide">
-              <!-- Testimonials -->
               <div class="w-md-80 w-lg-60 text-center mx-auto">
                 <blockquote class="h5 text-white font-weight-normal mb-4">The template is really nice and offers quite a large set of options. Thank you!</blockquote>
                 <h1 class="h6 text-white-70">Maria Muszynska, Google</h1>
               </div>
-              <!-- End Testimonials -->
             </div>
 
             <div class="js-slide">
-              <!-- Testimonials -->
               <div class="w-md-80 w-lg-60 text-center mx-auto">
                 <blockquote class="h5 text-white font-weight-normal mb-4">It's beautiful and the coding is done quickly and seamlessly. Keep it up!</blockquote>
                 <h2 class="h6 text-white-70">James Austin, Slack</h2>
               </div>
-              <!-- End Testimonials -->
+    
             </div>
 
             <div class="js-slide">
-              <!-- Testimonials -->
               <div class="w-md-80 w-lg-60 text-center mx-auto">
                 <blockquote class="h5 text-white font-weight-normal mb-4">I love Front! I love the ease of use, I love the fact that I have total creative freedom...</blockquote>
                 <h3 class="h6 text-white-70">Charlotte Moore, Amazon</h3>
               </div>
-              <!-- End Testimonials -->
             </div>
           </div>
-          <!-- End Testimonials Carousel Main -->
-
           <!-- Testimonials Carousel Pagination -->
-          <div id="testimonialsNavPagination" class="js-slick-carousel u-slick u-slick--transform-off u-slick--pagination-modern mx-auto"
-               data-infinite="true"
-               data-autoplay="true"
-               data-speed="5000"
-               data-center-mode="true"
-               data-slides-show="3"
-               data-is-thumbs="true"
-               data-focus-on-select="true"
-               data-nav-for="#testimonialsNavMain">
+          <div id="testimonialsNavPagination" class="js-slick-carousel u-slick u-slick--transform-off u-slick--pagination-modern mx-auto">
             <div class="js-slide">
               <div class="u-avatar mx-auto">
-                <img class="img-fluid rounded-circle" src="../../assets/img/100x100/img1.jpg" alt="Image Description">
+                <img class="img-fluid rounded-circle" src="../../assets/img/100x100/img1.jpg" alt="">
               </div>
             </div>
 
             <div class="js-slide">
               <div class="u-avatar mx-auto">
-                <img class="img-fluid rounded-circle" src="../../assets/img/100x100/img3.jpg" alt="Image Description">
+                <img class="img-fluid rounded-circle" src="../../assets/img/100x100/img3.jpg" alt="">
               </div>
             </div>
 
             <div class="js-slide">
               <div class="u-avatar mx-auto">
-                <img class="img-fluid rounded-circle" src="../../assets/img/100x100/img2.jpg" alt="Image Description">
+                <img class="img-fluid rounded-circle" src="../../assets/img/100x100/img2.jpg" alt="">
               </div>
             </div>
           </div>
@@ -85,13 +60,10 @@
             <h4 class="h6 text-white-70 mb-3">Front partners</h4>
             <div class="d-flex justify-content-center">
               <div class="mx-4">
-                <img class="u-clients" src="../../assets/svg/clients-logo/slack-white.svg" alt="Image Description">
               </div>
               <div class="mx-4">
-                <img class="u-clients" src="../../assets/svg/clients-logo/google-white.svg" alt="Image Description">
               </div>
               <div class="mx-4">
-                <img class="u-clients" src="../../assets/svg/clients-logo/spotify-white.svg" alt="Image Description">
               </div>
             </div>
           </div>
@@ -384,24 +356,20 @@ $cursor: #fff;
     -ms-flex-align: center !important;
     align-items: center !important;
 }
-@media (min-width: 992px)
 .d-lg-flex {
     display: -ms-flexbox !important;
     display: flex !important;
 }
-}
-@media (min-width: 1200px)
 .col-xl-4 {
     -ms-flex: 0 0 33.33333%;
     flex: 0 0 33.33333%;
     max-width: 33.33333%;
-}}
-@media (min-width: 992px)
+}
 .col-lg-5 {
     -ms-flex: 0 0 41.66667%;
     flex: 0 0 41.66667%;
     max-width: 41.66667%;
-}}
+}
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl, .col-xl-auto {
     position: relative;
     width: 100%;
@@ -435,9 +403,7 @@ figure {
 .u-slick.slick-initialized {
     background: none;
 }
-.u-slick {
-    background: url(../svg/preloaders/circle-preloader.svg) no-repeat 50% 50%;
-}
+
 .u-slick {
     position: relative;
 }
@@ -464,7 +430,6 @@ figure {
 h4, h5, h6, .h4, .h5, .h6 {
     font-weight: 500;
 }
-
 .mb-3, .my-3 {
     margin-bottom: 1rem !important;
 }
@@ -574,7 +539,6 @@ img {
     flex: 0 0 50%;
     max-width: 50%;
 }
-
 .text-center {
     text-align: center !important;
 }
