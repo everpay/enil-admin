@@ -1,6 +1,8 @@
 <template>
   <div id="tags-view-container" class="tags-view-container">
-     <search id="header-search" class="right-menu-item"/>
+    <div class="tags-view-wrapper">
+     <search id="header-search" class="tags-view-item"/>
+       </div>
   </div>
 </template>
 
