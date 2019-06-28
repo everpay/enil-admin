@@ -1,77 +1,5 @@
 <template>
-<div class="d-flex align-items-center position-relative height-lg-100vh">
-      <div class="col-lg-5 col-xl-4 d-none d-lg-flex align-items-center gradient-half-primary-v1 height-lg-100vh px-0">
-        <div class="w-100 p-5">
-          <figure class="text-center mb-5 mx-auto">
-            
-          </figure>
-          <div id="testimonialsNavMain" class="js-slick-carousel u-slick mb-4"
-               data-infinite="true"
-               data-autoplay="true"
-               data-speed="5000"
-               data-fade="true"
-               data-nav-for="#testimonialsNavPagination">
-            <div class="js-slide">
-              <div class="w-md-80 w-lg-60 text-center mx-auto">
-                <blockquote class="h5 text-white font-weight-normal mb-4">The template is really nice and offers quite a large set of options. Thank you!</blockquote>
-                <h1 class="h6 text-white-70">Maria Muszynska, Google</h1>
-              </div>
-            </div>
 
-            <div class="js-slide">
-              <div class="w-md-80 w-lg-60 text-center mx-auto">
-                <blockquote class="h5 text-white font-weight-normal mb-4">It's beautiful and the coding is done quickly and seamlessly. Keep it up!</blockquote>
-                <h2 class="h6 text-white-70">James Austin, Slack</h2>
-              </div>
-    
-            </div>
-
-            <div class="js-slide">
-              <div class="w-md-80 w-lg-60 text-center mx-auto">
-                <blockquote class="h5 text-white font-weight-normal mb-4">I love Front! I love the ease of use, I love the fact that I have total creative freedom...</blockquote>
-                <h3 class="h6 text-white-70">Charlotte Moore, Amazon</h3>
-              </div>
-            </div>
-          </div>
-          <!-- Testimonials Carousel Pagination -->
-          <div id="testimonialsNavPagination" class="js-slick-carousel u-slick u-slick--transform-off u-slick--pagination-modern mx-auto">
-            <div class="js-slide">
-              <div class="u-avatar mx-auto">
-                <img class="img-fluid rounded-circle" src="../../assets/img/100x100/img1.jpg" alt="">
-              </div>
-            </div>
-
-            <div class="js-slide">
-              <div class="u-avatar mx-auto">
-                <img class="img-fluid rounded-circle" src="../../assets/img/100x100/img3.jpg" alt="">
-              </div>
-            </div>
-
-            <div class="js-slide">
-              <div class="u-avatar mx-auto">
-                <img class="img-fluid rounded-circle" src="../../assets/img/100x100/img2.jpg" alt="">
-              </div>
-            </div>
-          </div>
-          <!-- End Testimonials Carousel Pagination -->
-
-          <!-- Clients -->
-          <div class="position-absolute right-0 bottom-0 left-0 text-center p-5">
-            <h4 class="h6 text-white-70 mb-3">Front partners</h4>
-            <div class="d-flex justify-content-center">
-              <div class="mx-4">
-              </div>
-              <div class="mx-4">
-              </div>
-              <div class="mx-4">
-              </div>
-            </div>
-          </div>
-          <!-- End Clients -->
-        </div>
-      </div>
-
-      <div class="container">
         <div class="row no-gutters">
           <div class="col-md-8 col-lg-7 col-xl-6 offset-md-2 offset-lg-2 offset-xl-3 space-3 space-lg-0">
     <el-form ref="loginForm" :model="loginForm" :rules="loginRules" class="js-validate mt-5" autocomplete="on" label-position="left">
@@ -129,7 +57,6 @@
           <span style="margin-right:18px;">Username : editor</span>
           <span>Password : any</span>
         </div>
-<!-- Button -->
               <div class="row align-items-center mb-5">
                 <div class="col-6">
                   <span class="small text-muted">Don't have an account?</span>
