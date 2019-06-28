@@ -103,5 +103,9 @@ export default {
     padding-left: 10px!important;
     background-color: #fff;
 }
+&
+.el-menu-item.is-active {
+    color: #c1c1c1!important;
+}
 }
 </style>
