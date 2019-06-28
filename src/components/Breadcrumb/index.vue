@@ -77,7 +77,7 @@ export default {
   .no-redirect {
     color: #666666;
     cursor: text;
-      margin-left: -20px;
+      margin-left: 20px;
   }
   
 element.style {
