@@ -25,7 +25,7 @@ export default {
   data() {
     return {
       title: 'ElektroPay',
-      logo: 'https://res.cloudinary.com/lmj6rf6tz/image/upload/v1496853334/Everpaylogo-261x67_jrwizm.png'
+      logo: 'https://res.cloudinary.com/lmj6rf6tz/image/upload/v1496853370/Everpay-small-logo-grey_xhq1zs.png'
     }
   }
 }
