@@ -95,17 +95,29 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.el-menu {
+
+..el-menu-item {
     border-right: 1px solid #e6e6e6;
     list-style: none;
     position: relative;
     margin: 0;
-    padding-left: 30px!important;
-    background-color: #fff;
+    padding-left: 20px!important;
 }
-&
 .el-menu-item.is-active {
     color: #c1c1c1!important;
 }
+#app .sidebar-container .svg-icon {
+    margin-right: 16px;
+    font-size: 16px!important;
+}
+#app .sidebar-container a {
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+}
+.el-menu-item {
+    font-size: 15.7555px!important;
+    color: #ffffff;
+    
 }
 </style>
