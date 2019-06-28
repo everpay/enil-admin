@@ -91,7 +91,7 @@ export const constantRoutes = [
         path: 'index',
         component: () => import('@/views/elektropay/index'),
         name: 'Elektropay',
-        meta: { title: 'Balances', icon: 'money', affix: true }
+        meta: { title: 'Balances', icon: 'money', noCache: true }
       }
     ]
   },
@@ -103,7 +103,7 @@ export const constantRoutes = [
         path: 'index',
         component: () => import('@/views/history/index'),
         name: 'History',
-        meta: { title: 'Transfers', icon: 'list', affix: true }
+        meta: { title: 'Transfers', icon: 'list', noCache: true }
       }
     ]
   },
@@ -115,7 +115,7 @@ export const constantRoutes = [
         path: 'index',
         component: () => import('@/views/history/index'),
         name: 'Recipients',
-        meta: { title: 'Recipients', icon: 'people', affix: true }
+        meta: { title: 'Recipients', icon: 'people', noCache: true }
       }
     ]
   },
@@ -127,7 +127,7 @@ export const constantRoutes = [
         path: 'index',
         component: () => import('@/views/payments/index'),
         name: 'Payments',
-        meta: { title: 'Payments', icon: 'shopping', affix: true }
+        meta: { title: 'Payments', icon: 'shopping', noCache: true }
       }
     ]
   },
@@ -139,7 +139,7 @@ export const constantRoutes = [
         path: 'index',
         component: () => import('@/views/invoices/index'),
         name: 'Invoices',
-        meta: { title: 'Invoices', icon: 'pdf', affix: true }
+        meta: { title: 'Invoices', icon: 'pdf', noCache: true }
       }
     ]
   },
