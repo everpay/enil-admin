@@ -7,7 +7,6 @@
       </router-link>
       <router-link v-else key="expand" class="sidebar-logo-link" to="/">
         <img v-if="logo" :src="logo" class="sidebar-logo">
-        <h1 class="sidebar-title"></h1>
       </router-link>
     </transition>
   </div>
@@ -39,6 +38,14 @@ export default {
 .sidebarLogoFade-enter,
 .sidebarLogoFade-leave-to {
   opacity: 0;
+}
+
+.sidebar-logo-container .sidebar-logo-link .sidebar-logo[data-v-d6268788] {
+    width: 110px;
+    height: auto;
+    vertical-align: baseline;
+    margin-left: -30px!important;
+    margin-top: 15px!important;
 }
 
 .sidebar-logo-container {
