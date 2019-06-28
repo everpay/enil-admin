@@ -16,8 +16,9 @@
 </template>
 
 <script>
+import Search from '@/components/HeaderSearch'
 import RightPanel from '@/components/RightPanel'
-import { AppMain, Navbar, Settings, Sidebar } from './components'
+import { AppMain, Navbar, Settings, Sidebar, TagsView } from './components'
 import ResizeMixin from './mixin/ResizeHandler'
 import { mapState } from 'vuex'
 
@@ -28,7 +29,9 @@ export default {
     Navbar,
     RightPanel,
     Settings,
-    Sidebar
+    Sidebar,
+    Search,
+    TagsView
   },
   mixins: [ResizeMixin],
   computed: {
@@ -36,6 +39,8 @@ export default {
       sidebar: state => state.app.sidebar,
       device: state => state.app.device,
       showSettings: state => state.settings.showSettings,
+      
+
       fixedHeader: state => state.settings.fixedHeader
     }),
     classObj() {
@@ -43,6 +48,7 @@ export default {
         hideSidebar: !this.sidebar.opened,
         openSidebar: this.sidebar.opened,
         withoutAnimation: this.sidebar.withoutAnimation,
+        needTagsView: state => state.settings.tagsView,
         mobile: this.device === 'mobile'
       }
     }
