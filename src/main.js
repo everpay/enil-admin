@@ -1,5 +1,7 @@
 import Vue from 'vue'
 
+import BootstrapVue from './assets/bootstrap-vue'
+
 import Cookies from 'js-cookie'
 
 import 'normalize.css/normalize.css' // a modern alternative to CSS resets
@@ -12,9 +14,6 @@ import '@/styles/index.scss' // global css
 import App from './App'
 import store from './store'
 import router from './router'
-import BootstrapVue from './styles/bootstrap-vue'
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 import './icons' // icon
 import './permission' // permission control
@@ -34,6 +33,7 @@ import { mockXHR } from '../mock'
 if (process.env.NODE_ENV === 'production') {
   mockXHR()
 }
+
 Vue.use(BootstrapVue)
 
 Vue.use(Element, {
