@@ -12,9 +12,6 @@ import '@/styles/index.scss' // global css
 import App from './App'
 import store from './store'
 import router from './router'
-import BootstrapVue from 'bootstrap-vue'
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 import './icons' // icon
 import './permission' // permission control
@@ -34,8 +31,6 @@ import { mockXHR } from '../mock'
 if (process.env.NODE_ENV === 'production') {
   mockXHR()
 }
-
-Vue.use(BootstrapVue)
 
 Vue.use(Element, {
   size: Cookies.get('size') || 'medium' // set element-ui default size
