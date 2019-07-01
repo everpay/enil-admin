@@ -1,7 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Hello from '@/components/Hello'
-import PostsManager from '@/components/PostsManager'
 import Auth from '@okta/okta-vue'
 
 Vue.use(Auth, {
@@ -81,6 +79,10 @@ export const constantRoutes = [
     hidden: true
   },
   {
+      path: '/implicit/callback',
+      component: Auth.handleCallback()
+    },
+  {
     path: '/',
     component: Layout,
     redirect: '/dashboard',
@@ -89,7 +91,7 @@ export const constantRoutes = [
         path: 'dashboard',
         component: () => import('@/views/dashboard/index'),
         name: 'Dashboard',
-        meta: { title: 'Activity', icon: 'dashboard', affix: true }
+        meta: { title: 'Activity', icon: 'dashboard', requiresAuth: 'true', affix: true }
       }
     ]
   },
@@ -101,7 +103,7 @@ export const constantRoutes = [
         path: 'index',
         component: () => import('@/views/elektropay/index'),
         name: 'Elektropay',
-        meta: { title: 'Balances', icon: 'money', noCache: true }
+        meta: { title: 'Balances', icon: 'money', requiresAuth: 'true', noCache: true }
       }
     ]
   },
@@ -113,7 +115,7 @@ export const constantRoutes = [
         path: 'index',
         component: () => import('@/views/history/index'),
         name: 'History',
-        meta: { title: 'Transfers', icon: 'list', noCache: true }
+        meta: { title: 'Transfers', icon: 'list', requiresAuth: 'true', noCache: true }
       }
     ]
   },
@@ -125,7 +127,7 @@ export const constantRoutes = [
         path: 'index',
         component: () => import('@/views/recipients/list'),
         name: 'Recipients',
-        meta: { title: 'Recipients', icon: 'people', noCache: true }
+        meta: { title: 'Recipients', icon: 'people', requiresAuth: 'true', noCache: true }
       }
     ]
   },
@@ -137,7 +139,7 @@ export const constantRoutes = [
         path: 'index',
         component: () => import('@/views/payments/index'),
         name: 'Payments',
-        meta: { title: 'Payments', icon: 'shopping', noCache: true }
+        meta: { title: 'Payments', icon: 'shopping', requiresAuth: 'true', noCache: true }
       }
     ]
   },
@@ -149,7 +151,7 @@ export const constantRoutes = [
         path: 'index',
         component: () => import('@/views/invoices/index'),
         name: 'Invoices',
-        meta: { title: 'Invoices', icon: 'pdf', noCache: true }
+        meta: { title: 'Invoices', icon: 'pdf', requiresAuth: 'true', noCache: true }
       }
     ]
   },
@@ -161,7 +163,7 @@ export const constantRoutes = [
         path: 'index',
         component: () => import('@/views/documentation/index'),
         name: 'Documentation',
-        meta: { title: 'Documentation', icon: 'documentation', affix: true }
+        meta: { title: 'Documentation', icon: 'documentation', requiresAuth: 'true', affix: true }
       }
     ]
   },
@@ -174,7 +176,7 @@ export const constantRoutes = [
         path: 'index',
         component: () => import('@/views/guide/index'),
         name: 'Guide',
-        meta: { title: 'Guide', icon: 'guide', noCache: true }
+        meta: { title: 'Guide', icon: 'guide', requiresAuth: 'true', noCache: true }
       }
     ]
   },
@@ -188,7 +190,7 @@ export const constantRoutes = [
         path: 'index',
         component: () => import('@/views/profile/index'),
         name: 'Profile',
-        meta: { title: 'Profile', icon: 'user', noCache: true }
+        meta: { title: 'Profile', icon: 'user', requiresAuth: 'true', noCache: true }
       }
     ]
   }
@@ -208,7 +210,7 @@ export const asyncRoutes = [
     meta: {
       title: 'Permission',
       icon: 'lock',
-      roles: ['admin', 'editor'] // you can set roles in root nav
+      roles: ['admin', 'business'] // you can set roles in root nav
     },
     children: [
       {
@@ -249,7 +251,7 @@ export const asyncRoutes = [
         path: 'index',
         component: () => import('@/views/icons/index'),
         name: 'Icons',
-        meta: { title: 'Icons', icon: 'icon', noCache: true }
+        meta: { title: 'Icons', icon: 'icon', requiresAuth: 'true', noCache: true }
       }
     ]
   },
