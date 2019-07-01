@@ -3,8 +3,17 @@ const tokens = {
   admin: {
     token: 'admin-token'
   },
-  editor: {
-    token: 'editor-token'
+    personal: {
+    token: 'personal-token'
+  },  
+    business: {
+    token: 'business-token'
+  },
+  developer: {
+    token: 'developer-token'
+  },
+  partner: {
+    token: 'partner-token'
   }
 }
 
@@ -15,11 +24,29 @@ const users = {
     avatar: 'https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif',
     name: 'Super Admin'
   },
-  'editor-token': {
-    roles: ['editor'],
-    introduction: 'I am an editor',
+   'personal-token': {
+    roles: ['personal'],
+    introduction: 'I am using this a as personal account',
     avatar: 'https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif',
-    name: 'Normal Editor'
+    name: 'Persoanl Account'
+  },
+    'business-token': {
+    roles: ['business'],
+    introduction: 'I am a business user otherwise known as a merchant',
+    avatar: 'https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif',
+    name: 'Merchant Account'
+  },
+ 'developer-token': {
+    roles: ['developer'],
+    introduction: 'I am a super developer',
+    avatar: 'https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif',
+    name: 'Super Develoepr'
+  },
+  'partner-token': {
+    roles: ['partner'],
+    introduction: 'I am a sales partner / reseller',
+    avatar: 'https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif',
+    name: 'Partner/ Reseller'
   }
 }
 
