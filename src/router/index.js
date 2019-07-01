@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Auth from '@okta/okta-vue'
+import Auth from 'okta-vue'
 
 Vue.use(Auth, {
   issuer: 'https://everpayinc.okta.com/oauth2/default',
