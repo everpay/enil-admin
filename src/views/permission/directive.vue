@@ -13,23 +13,53 @@
       </div>
 
       <div>
-        <span v-permission="['editor']" class="permission-alert">
+        <span v-permission="['personal']" class="permission-alert">
           Only
-          <el-tag class="permission-tag" size="small">editor</el-tag> can see this
+          <el-tag class="permission-tag" size="small">Personal account</el-tag> can see this
         </span>
-        <el-tag v-permission="['editor']" class="permission-sourceCode" type="info">
-          v-permission="['editor']"
+        <el-tag v-permission="['personal']" class="permission-sourceCode" type="info">
+          v-permission="['personal']"
+        </el-tag>
+      </div>
+      
+        <div>
+        <span v-permission="['business']" class="permission-alert">
+          Only
+          <el-tag class="permission-tag" size="small">merchant</el-tag> can see this
+        </span>
+        <el-tag v-permission="['business']" class="permission-sourceCode" type="info">
+          v-permission="['business']"
+        </el-tag>
+      </div>
+      
+        <div>
+        <span v-permission="['developer']" class="permission-alert">
+          Only
+          <el-tag class="permission-tag" size="small">Developers</el-tag> can see this
+        </span>
+        <el-tag v-permission="['developer']" class="permission-sourceCode" type="info">
+          v-permission="['developer']"
+        </el-tag>
+      </div>
+      
+        <div>
+        <span v-permission="['partners']" class="permission-alert">
+          Only
+          <el-tag class="permission-tag" size="small">Partners and Resellers</el-tag> can see this
+        </span>
+        <el-tag v-permission="['partner']" class="permission-sourceCode" type="info">
+          v-permission="['partner']"
         </el-tag>
       </div>
 
       <div>
-        <span v-permission="['admin','editor']" class="permission-alert">
+        <span v-permission="['admin','business']" class="permission-alert">
           Both
           <el-tag class="permission-tag" size="small">admin</el-tag> and
-          <el-tag class="permission-tag" size="small">editor</el-tag> can see this
+          <el-tag class="permission-tag" size="small">business</el-tag> can see this
         </span>
-        <el-tag v-permission="['admin','editor']" class="permission-sourceCode" type="info">
-          v-permission="['admin','editor']"
+        <el-tag v-permission="['admin','business']" class="permission-sourceCode" type="info">
+          v-permission="['admin','business']"
         </el-tag>
       </div>
     </div>
@@ -48,17 +78,17 @@
           </el-tag>
         </el-tab-pane>
 
-        <el-tab-pane v-if="checkPermission(['editor'])" label="Editor">
+        <el-tab-pane v-if="checkPermission(['business'])" label="Business">
           Editor can see this
           <el-tag class="permission-sourceCode" type="info">
-            v-if="checkPermission(['editor'])"
+            v-if="checkPermission(['business'])"
           </el-tag>
         </el-tab-pane>
 
-        <el-tab-pane v-if="checkPermission(['admin','editor'])" label="Admin-OR-Editor">
+        <el-tab-pane v-if="checkPermission(['admin','business'])" label="Admin-OR-Business">
           Both admin or editor can see this
           <el-tag class="permission-sourceCode" type="info">
-            v-if="checkPermission(['admin','editor'])"
+            v-if="checkPermission(['admin','business'])"
           </el-tag>
         </el-tab-pane>
       </el-tabs>
