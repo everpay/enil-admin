@@ -54,8 +54,9 @@ import ErrorLog from '@/components/ErrorLog'
 import Screenfull from '@/components/Screenfull'
 import SizeSelect from '@/components/SizeSelect'
 import Search from '@/components/HeaderSearch'
-
-export default {
+  
+export default {  
+components: {
     Breadcrumb,
     Hamburger,
     ErrorLog,
