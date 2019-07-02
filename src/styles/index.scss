@@ -81,6 +81,14 @@ div:focus {
   cursor: pointer;
 }
 
+.nav-toolbar {
+    margin-top: 0;
+    background-color: #fff;
+    padding-top: 16px;
+    padding-bottom: 0;
+    border-bottom: 1px solid #e2e6e8;
+}
+
 .inlineBlock {
   display: block;
 }
