@@ -6,7 +6,7 @@
     <navtool-bar class="navtool-bar" />
     </el-col>
     <el-col :xs="12" :sm="12" :lg="12">
-    <search id="navbar-search" class="navbar-search" />
+    <search id="header-search" class="navbar-search" />
      </el-col>
      </div>
     </el-row>
@@ -113,9 +113,14 @@ export default {
     top: 0px;
     border: 0;
     right: 0;
-    
   }
 
+  .navbar-search {
+    position: absolute;
+    top: 0px;
+    border: 0;
+    right: 0;
+  }
   .chart-wrapper {
     background: #fff;
     padding: 16px 16px 0;
