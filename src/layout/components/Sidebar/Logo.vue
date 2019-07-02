@@ -58,8 +58,8 @@ export default {
       width: 125px;
       height: 32px;
       vertical-align: left;
-       margin-top: 22px;
-      margin-right: 30px;
+       margin-top: 10px;
+      margin-right: 20px;
     }
 
     & .sidebar-title {
