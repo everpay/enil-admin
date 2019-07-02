@@ -1,5 +1,5 @@
 <template>
-<el-row style="background:#283443;padding:0px 1px 0;margin-bottom:0px;">
+<el-row :gutter="48" style="background:#283443;padding:0px 1px 0;margin-bottom:0px;height:100%;">
  <el-col :xs="24" :sm="24" :md="{span: 12}" :lg="12">
  
       </el-col>
