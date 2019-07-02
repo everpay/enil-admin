@@ -1,19 +1,15 @@
 <template>
   <div class="dashboard-editor-container">
-
     <el-row class="navtool-bar" :gutter="8">
     <el-col :xs="12" :sm="12" :lg="12"></el-col>
     <el-col :xs="12" :sm="12" :lg="12">
       <search id="header-search" class="navbar-search" />
-</el-col>
+    </el-col>
      </el-row>
-    
     <panel-group @handleSetLineChartData="handleSetLineChartData" />
-
     <el-row style="background:#fff;padding:16px 16px 0;margin-bottom:32px;">
       <line-chart :chart-data="lineChartData" />
     </el-row>
-
     <el-row :gutter="32" style="display:none;">
       <el-col :xs="24" :sm="24" :lg="8">
         <div class="chart-wrapper">
@@ -31,13 +27,11 @@
         </div>
       </el-col>
     </el-row>
-
     <el-row :gutter="8">
       <el-col :xs="{span: 12}" :sm="{span: 12}" :md="{span: 12}" :lg="{span: 12}" :xl="{span: 12}" style="padding-right:8px;margin-bottom:30px;">
         <transaction-table />
       </el-col>
     </el-row>
-    
   </div>
 </template>
 
