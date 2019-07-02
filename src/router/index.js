@@ -115,7 +115,7 @@ export const constantRoutes = [
         path: 'index',
         component: () => import('@/views/recipients/list'),
         name: 'Recipients',
-        meta: { title: 'Recipients', icon: 'people', roles: ['admin'], noCache: true }
+        meta: { title: 'Recipients', icon: 'people', noCache: true }
       }
     ]
   },
@@ -150,8 +150,7 @@ export const constantRoutes = [
     name: 'Product',
     meta: {
       title: 'Product',
-      icon: 'example',
-      roles: ['admin']
+      icon: 'example'
     },
     children: [
       {
@@ -164,7 +163,7 @@ export const constantRoutes = [
         path: 'edit/:id(\\d+)',
         component: () => import('@/views/product/edit'),
         name: 'EditProduct',
-        meta: { title: 'Edit Article', noCache: true, activeMenu: '/example/list' },
+        meta: { title: 'Edit Article', noCache: true, activeMenu: '/product/list' },
         hidden: true
       },
       {
