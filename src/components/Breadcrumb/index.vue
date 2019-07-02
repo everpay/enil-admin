@@ -72,18 +72,18 @@ export default {
   display: inline-block;
    color: #5d7079;
     float: left;
-    font-size: 21.75px;
+    font-size: 21px;
     line-height: 32px;
     margin-top: 12px;
     margin-bottom: 12px;
     margin-left: 10px;
-    font-weight: 800;
+    font-weight: 600;
 
   .no-redirect {
     color: #5d7079;
     cursor: text;
-    font-weight: 800;
-    font-size: 21.755px;
+    font-weight: 600;
+    font-size: 21px;
   }
 }
 </style>
