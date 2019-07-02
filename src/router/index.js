@@ -116,7 +116,6 @@ export const constantRoutes = [
     ]
   },
 {
-{
     path: '/guide',
     component: Layout,
     redirect: '/guide/index',
