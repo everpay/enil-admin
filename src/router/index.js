@@ -143,37 +143,7 @@ export const constantRoutes = [
       }
     ]
   },
-{
-    path: '/product',
-    component: Layout,
-    redirect: '/product/list',
-    name: 'Product',
-    meta: {
-      title: 'Product',
-      icon: 'example'
-    },
-    children: [
-      {
-        path: 'create',
-        component: () => import('@/views/product/create'),
-        name: 'CreateProduct',
-        meta: { title: 'Create Product', icon: 'edit' }
-      },
-      {
-        path: 'edit/:id(\\d+)',
-        component: () => import('@/views/product/edit'),
-        name: 'EditProduct',
-        meta: { title: 'Edit Product', noCache: true, activeMenu: '/product/list' },
-        hidden: true
-      },
-      {
-        path: 'list',
-        component: () => import('@/views/product/list'),
-        name: 'ProductList',
-        meta: { title: 'Product List', icon: 'list' }
-      }
-    ]
-  },
+
   {
     path: '/documentation',
     component: Layout,
@@ -182,23 +152,15 @@ export const constantRoutes = [
         path: 'index',
         component: () => import('@/views/documentation/index'),
         name: 'Documentation',
-        meta: { title: 'Documentation', icon: 'documentation', affix: true }
+        meta: { title: 'Documentation', 
+                icon: 'documentation', 
+                affix: 'false', 
+                roles: ['admin'] 
+               }
       }
     ]
   },
-  {
-    path: '/guide',
-    component: Layout,
-    redirect: '/guide/index',
-    children: [
-      {
-        path: 'index',
-        component: () => import('@/views/guide/index'),
-        name: 'Guide',
-        meta: { title: 'Guide', icon: 'guide', noCache: true }
-      }
-    ]
-  },
+
   {
     path: '/profile',
     component: Layout,
