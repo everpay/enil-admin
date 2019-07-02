@@ -5,7 +5,7 @@
       </el-col>
 
  <el-col class="paneR float-right" :xs="24" :sm="24" :md="16" :lg="16">
-
+<div class="main-panel__content">
   <div class="login-container">
     <el-form ref="loginForm" :model="loginForm" :rules="loginRules" class="login-form" autocomplete="on" label-position="left">
 
@@ -53,7 +53,8 @@
       </el-tooltip>
 
 </div>
-      <el-button :loading="loading" type="primary" style="width:100%;margin-bottom:30px;" @click.native.prevent="handleLogin">Login</el-button>
+   <el-button :loading="loading" type="success" style="width:100%;margin-bottom:30px;" @click.native.prevent="handleLogin">Login</el-button>
+</div>
 
       <div style="position:relative">
         <div class="tips">
@@ -286,6 +287,12 @@ $light_gray:#eee;
       }
     }
   }
+  .main-panel__content {
+    clear: both;
+    width: 90%;
+    max-width: 540px;
+    margin: 0 auto;
+}
   .main-panel__heading {
     font-size: 36px;
     font-weight: 700;
