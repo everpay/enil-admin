@@ -1710,10 +1710,5 @@ select.form-control[multiple], .form-group.is-focused select.form-control[multip
     bottom: 6px;
   }
 
-  @media only screen and (max-width: 470px) {
-    .thirdparty-button {
-      display: none;
-    }
-  }
 
 </style>
