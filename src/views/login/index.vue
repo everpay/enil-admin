@@ -410,8 +410,10 @@ button {
 
 .everpay-logo{display:block;position:absolute;z-index:10;display:inline-block;vertical-align:middle;top:5%!important;left:5%!important;background:url('https://res.cloudinary.com/lmj6rf6tz/image/upload/v1496853334/Everpaylogo-261x67_jrwizm.png') no-repeat;width:180px!important;background-size:90%;color:transparent;font-size:1px}
 .form__input,.form__select{height:50px;display:block;width:100%}
-@media (min-width:1076px){.everpay-logo{background-image:url('https://res.cloudinary.com/lmj6rf6tz/image/upload/v1496853334/Everpay-dark-logo_lghtzd.png')no-repeat}
-.everpay-logo--single{background-image:url('https://res.cloudinary.com/lmj6rf6tz/image/upload/v1506199019/Everpay-icon_ihn2fk.png')}}
+@media (min-width:1076px){
+.everpay-logo{background-image:url('https://res.cloudinary.com/lmj6rf6tz/image/upload/v1496853334/Everpay-dark-logo_lghtzd.png')no-repeat}
+.everpay-logo--single{background-image:url('https://res.cloudinary.com/lmj6rf6tz/image/upload/v1506199019/Everpay-icon_ihn2fk.png')}
+}
 
 .form__group{position:relative;margin-bottom:23px}
 .form__label{display:block;font-weight:700;font-size:11px;color:#434C5E;margin-bottom:8px}
@@ -1070,33 +1072,6 @@ output {
   font-size: 14px;
   line-height: 1.42857;
 }
-
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  input[type="date"].form-control,
-  input[type="time"].form-control,
-  input[type="datetime-local"].form-control,
-  input[type="month"].form-control {
-    line-height: 36px;
-  }
-  input[type="date"].input-sm, .input-group-sm input[type="date"],
-  input[type="time"].input-sm, .input-group-sm
-  input[type="time"],
-  input[type="datetime-local"].input-sm, .input-group-sm
-  input[type="datetime-local"],
-  input[type="month"].input-sm, .input-group-sm
-  input[type="month"] {
-    line-height: 24px;
-  }
-  input[type="date"].input-lg, .input-group-lg input[type="date"],
-  input[type="time"].input-lg, .input-group-lg
-  input[type="time"],
-  input[type="datetime-local"].input-lg, .input-group-lg
-  input[type="datetime-local"],
-  input[type="month"].input-lg, .input-group-lg
-  input[type="month"] {
-    line-height: 44px;
-  }
-}
 .radio label,
 .checkbox label {
   min-height: 20px;
@@ -1704,11 +1679,6 @@ select.form-control[multiple], .form-group.is-focused select.form-control[multip
     user-select: none;
   }
 
-  .thirdparty-button {
-    position: absolute;
-    right: 0;
-    bottom: 6px;
-  }
-
+  
 
 </style>
