@@ -1,5 +1,7 @@
 <template>
   <div class="navbar">
+      <hamburger id="hamburger-container" :is-active="sidebar.opened" class="hamburger-container" @toggleClick="toggleSideBar" />
+    
     <breadcrumb id="breadcrumb-container" class="breadcrumb-container" />
 
     <div class="right-menu">
@@ -105,17 +107,6 @@ export default {
     float: left;
   }
   
-   .profile_name {
-        font-size: 16px;
-        line-height: 16px;
-        color: #212121;
-        top: 15px;
-        }
-      
-  .m-l-1 {
-    margin-left: 8px !important;
-  }
-
   .errLog-container {
     display: inline-block;
     vertical-align: top;
