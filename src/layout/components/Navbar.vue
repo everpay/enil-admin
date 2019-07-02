@@ -19,7 +19,7 @@
       <el-dropdown class="avatar-container right-menu-item hover-effect" trigger="click">
         <div class="avatar-wrapper">
           <img :src="avatar+'?imageView2/1/w/80/h/80'" class="user-avatar">
-        <span class="hidden-xs hidden-sm m-l-1">{{ name }}</span>
+        <span class="profile_name hidden-xs hidden-sm m-l-1">{{ name }}</span>
           <i class="el-icon-caret-bottom" />
         </div>
         <el-dropdown-menu slot="dropdown">
@@ -103,6 +103,18 @@ export default {
 
   .breadcrumb-container {
     float: left;
+  }
+  
+   .profile_name {
+        font-size: 16px;
+        line-height: 16px;
+        color: #212121;
+        position: absolute;
+        top: 15px;
+      }
+      
+  .m-l-1 {
+    margin-left: 8px !important;
   }
 
   .errLog-container {
