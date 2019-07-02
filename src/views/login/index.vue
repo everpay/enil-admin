@@ -1,11 +1,59 @@
 <template>
+<div class="panel-wrapper">
+<a href="//everpayinc.com" class="everpay-logo">Everpay</a>
+
+<div class="feature-panel feature-panel--enterprise" style="background: url('https://res.cloudinary.com/lmj6rf6tz/image/upload/q_auto:good/v1525911362/bg-img-fforms_lgfgvy.jpg') no-repeat 40% 0 / cover">
+
+		<div class="enterprise-panel__content text-center">
+				<h2 class="enterprise-panel__header">
+					<small class="enterprise-panel__subheader">
+						EverPay Enterprise Edition
+					</small>
+					Customized cloud powered commerce
+				</h2>
+				<p class="enterprise-panel__caption text-center">
+					Unlimited users. Unlimited gateways. Unlimited connectivity.
+				</p>
+<a href="https://app.everpayinc.com/user/register" target="_blank" class="enterprise-panel__button m-bottom-md-10">Register for an account.</a>
+			</div>
+
+			<div class="enterprise-panel__footer">
+				<p class="enterprise-panel__footer__lead">
+					TRUSTED BY THE WORLD'S SMARTEST COMPANIES
+				</p>
+<img src="https://res.cloudinary.com/lmj6rf6tz/image/upload/co_rgb:434c5f,e_colorize:100,o_100/v1522591543/enterprise-logos_ojcwan.png" class="enterprise-panel__logos" />
+                        </div>
+  </div>
+
+		<div class="main-panel">
+
+			<div class="main-panel__table">
+				<div class="main-panel__table-cell">
+
+					<div class="main-panel__switch">
+						<span class="main-panel__switch__text">
+							Don't have an account?
+						</span>
+						<a href="https://app.everpayinc.com/user/register?redir=" class="main-panel__switch__button">
+							Get Started
+						</a>
+					</div>
+
+					<div class="main-panel__content">
+
+						<h1 class="main-panel__heading">
+							Welcome Back
+                                                        <small class="main-panel__subheading">
+							Connect to your dashboard, and manage your payments.
+							</small>
+						</h1>
+            
   <div class="login-container">
-    <el-form ref="loginForm" :model="loginForm" :rules="loginRules" class="login-form" autocomplete="on" label-position="left">
-
-      <div class="title-container">
-        <h3 class="title">Login Form</h3>
-      </div>
-
+    <el-form ref="loginForm" :model="loginForm" :rules="loginRules" class="main-panel__form Bizible-Exclude" autocomplete="on" label-position="left">
+ <div class="widget-box">
+      <div class="box-highlight">
+      <div class="field">
+          <div class="form-group float-label-control">
       <el-form-item prop="username">
         <span class="svg-container">
           <svg-icon icon-class="user" />
@@ -19,9 +67,13 @@
           tabindex="1"
           autocomplete="on"
         />
-      </el-form-item>
+     </el-form-item>
+     </div>
+</div>
 
-      <el-tooltip v-model="capsTooltip" content="Caps lock is On" placement="right" manual>
+<div class="field">
+          <div class="form-group float-label-control"> 
+ <el-tooltip v-model="capsTooltip" content="Caps lock is On" placement="right" manual>
         <el-form-item prop="password">
           <span class="svg-container">
             <svg-icon icon-class="password" />
@@ -42,8 +94,11 @@
           <span class="show-pwd" @click="showPwd">
             <svg-icon :icon-class="passwordType === 'password' ? 'eye' : 'eye-open'" />
           </span>
-        </el-form-item>
+        </el-form-item> 
       </el-tooltip>
+      <a class="form__help text-left margin-top-10">Forgot your password?</a>
+     </div>
+</div>
 
       <el-button :loading="loading" type="primary" style="width:100%;margin-bottom:30px;" @click.native.prevent="handleLogin">Login</el-button>
 
@@ -71,6 +126,8 @@
       <social-sign />
     </el-dialog>
   </div>
+  
+</div>
 </template>
 
 <script>
