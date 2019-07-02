@@ -236,14 +236,14 @@ $cursor: #bbbbbb;
     height: 48px;
     width: 85%;
     input {
-    background-color: #ecf2f4!important;
+    background: #ecf2f4;
     border-radius: 0.2rem;
     border: none;
       -webkit-appearance: none;
       border-radius: 0px;
       padding: 12px 5px 12px 15px;
       color: $light_gray;
-      height: 47px;
+      height: 48px;
       caret-color: $cursor;
       &:-webkit-autofill {
         box-shadow: 0 0 0px 1000px $bg inset !important;
@@ -252,8 +252,8 @@ $cursor: #bbbbbb;
     }
   }
   .el-form-item {
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    background: rgba(0, 0, 0, 0.1);
+    border: 0px solid rgba(255, 255, 255, 0.1);
+    background: transparent;
     border-radius: 5px;
     color: #454545;
   }
@@ -302,7 +302,7 @@ $light_gray:#eee;
 .height-lg-100vh {
     height: 100vh;
 }
-  .d-lg-flex {
+.d-lg-flex {
     display: -ms-flexbox !important;
     display: flex !important;
 }
