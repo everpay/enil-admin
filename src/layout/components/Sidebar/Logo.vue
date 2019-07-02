@@ -55,11 +55,11 @@ export default {
     width: 100%;
 
     & .sidebar-logo {
-      width: 135px;
-      height: 34px;
+      width: 125px;
+      height: 32px;
       vertical-align: left;
-       margin-top: 15px;
-      margin-left: 10px;
+       margin-top: 22px;
+      margin-right: 30px;
     }
 
     & .sidebar-title {
