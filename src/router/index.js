@@ -163,7 +163,7 @@ export const constantRoutes = [
         path: 'edit/:id(\\d+)',
         component: () => import('@/views/product/edit'),
         name: 'EditProduct',
-        meta: { title: 'Edit Article', noCache: true, activeMenu: '/product/list' },
+        meta: { title: 'Edit Product', noCache: true, activeMenu: '/product/list' },
         hidden: true
       },
       {
