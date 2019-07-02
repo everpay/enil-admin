@@ -3,7 +3,7 @@
     <el-row class="navtool-bar" :gutter="8">
     <el-col :xs="12" :sm="12" :lg="12"></el-col>
     <el-col :xs="12" :sm="12" :lg="12">
-      <search id="header-search" class="navbar-search" />
+      <search id="navbar-search" class="navbar-search" />
     </el-col>
      </el-row>
     <panel-group @handleSetLineChartData="handleSetLineChartData" />
