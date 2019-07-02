@@ -153,7 +153,7 @@ export default {
           cursor: pointer;
           position: absolute;
           right: -20px;
-          top: 20px;
+          top: 10px;
           font-size: 16px;
         }
       }
