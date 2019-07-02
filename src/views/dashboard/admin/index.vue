@@ -45,7 +45,7 @@
 </template>
 
 <script>
-import NavtoolBar from '@/components/NavtoolBar'
+import NavtoolBar from './components/NavtoolBar'
 import Search from './components/HeaderSearch'
 import PanelGroup from './components/PanelGroup'
 import LineChart from './components/LineChart'
