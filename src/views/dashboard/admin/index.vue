@@ -3,7 +3,7 @@
 
     <el-row class="nav-toolbar" :gutter="8">
       <el-col :xs="12" :sm="12" :lg="12">
-    <navtool-bar />
+      
     </el-col>
     <el-col :xs="12" :sm="12" :lg="12">
     <search id="header-search" class="navbar-search" />
@@ -45,7 +45,6 @@
 </template>
 
 <script>
-import NavtoolBar from './components/NavtoolBar'
 import Search from './components/HeaderSearch'
 import PanelGroup from './components/PanelGroup'
 import LineChart from './components/LineChart'
