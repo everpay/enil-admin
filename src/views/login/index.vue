@@ -1715,5 +1715,5 @@ select.form-control[multiple], .form-group.is-focused select.form-control[multip
       display: none;
     }
   }
-}
+
 </style>
