@@ -25,7 +25,7 @@ export default {
   data() {
     return {
       title: 'verpay',
-      logo: 'https://res.cloudinary.com/lmj6rf6tz/image/upload/v1496853334/Everpay-dark-logo_lghtzd.png'
+      logo: 'https://res.cloudinary.com/lmj6rf6tz/image/upload/c_scale,w_122/v1496853334/Everpay-dark-logo_lghtzd.png'
     }
   }
 }
@@ -55,8 +55,8 @@ export default {
     width: 100%;
 
     & .sidebar-logo {
-      width: 125px;
-      height: 32px;
+      width: 121px;
+      height: 31px;
       vertical-align: left;
        margin-top: 10px;
       margin-right: 20px;
