@@ -2,12 +2,10 @@
   <div class="dashboard-editor-container">
 
     <el-row :gutter="8">
-      <el-col :xs="12" :sm="12" :lg="12">
-      
-    </el-col>
+    <el-col :xs="12" :sm="12" :lg="12"></el-col>
     <el-col :xs="12" :sm="12" :lg="12">
-    
-        </el-col>
+      <search id="header-search" class="navbar-search" />
+</el-col>
      </el-row>
     
     <panel-group @handleSetLineChartData="handleSetLineChartData" />
