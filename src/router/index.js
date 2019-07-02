@@ -1,13 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Auth from 'okta-vue'
-
-Vue.use(Auth, {
-  issuer: 'https://everpayinc.okta.com/oauth2/default',
-  client_id: '0oatmeg9wambynm1X356',
-  redirect_uri: 'https://admin.everpayinc.com/implicit/callback',
-  scope: 'openid profile email'
-})
 
 Vue.use(Router)
 
