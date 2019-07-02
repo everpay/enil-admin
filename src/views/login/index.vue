@@ -1,36 +1,11 @@
 <template>
-
-<link rel="stylesheet" href="https://geteverpay.netlify.com/assets/css/login-signup2233.css">
-<div class="panel-wrapper">
-<a href="" class="everpay-logo">Everpay</a>
-<div class="feature-panel feature-panel--enterprise">
-<div class="enterprise-panel__content text-center">
-				<h2 class="enterprise-panel__header">
-					<small class="enterprise-panel__subheader">EverPay Enterprise Edition</small>Customized cloud powered commerce
-				</h2>
-<p class="enterprise-panel__caption text-center">Unlimited users. Unlimited gateways. Unlimited connectivity.</p>
-<a href="" target="_blank" class="enterprise-panel__button m-bottom-md-10">Register for an account.</a>
-			</div>
-			<div class="enterprise-panel__footer">
-				<p class="enterprise-panel__footer__lead">TRUSTED BY THE WORLD'S SMARTEST COMPANIES</p>
-                        </div>
-  </div>
-		<div class="main-panel">
-			<div class="main-panel__table">
-				<div class="main-panel__table-cell">
-					<div class="main-panel__switch">
-						<span class="main-panel__switch__text">Don't have an account?</span>
-	<a href="" class="main-panel__switch__button">Get Started</a>
-					</div>
-	<div class="main-panel__content">
-<h1 class="main-panel__heading">Welcome Back<small class="main-panel__subheading">Connect to your dashboard, and manage your payments.</small>
-						</h1>
   <div class="login-container">
-    <el-form ref="loginForm" :model="loginForm" :rules="loginRules" class="main-panel__form Bizible-Exclude" autocomplete="on" label-position="left">
- <div class="widget-box">
-      <div class="box-highlight">
-      <div class="field">
-          <div class="form-group float-label-control">
+    <el-form ref="loginForm" :model="loginForm" :rules="loginRules" class="login-form" autocomplete="on" label-position="left">
+
+      <div class="title-container">
+        <h3 class="title">Login Form</h3>
+      </div>
+
       <el-form-item prop="username">
         <span class="svg-container">
           <svg-icon icon-class="user" />
@@ -44,12 +19,9 @@
           tabindex="1"
           autocomplete="on"
         />
-     </el-form-item>
-     </div>
-</div>
-<div class="field">
-          <div class="form-group float-label-control"> 
- <el-tooltip v-model="capsTooltip" content="Caps lock is On" placement="right" manual>
+      </el-form-item>
+
+      <el-tooltip v-model="capsTooltip" content="Caps lock is On" placement="right" manual>
         <el-form-item prop="password">
           <span class="svg-container">
             <svg-icon icon-class="password" />
@@ -70,15 +42,12 @@
           <span class="show-pwd" @click="showPwd">
             <svg-icon :icon-class="passwordType === 'password' ? 'eye' : 'eye-open'" />
           </span>
-        </el-form-item> 
+        </el-form-item>
       </el-tooltip>
-      <a class="form__help text-left margin-top-10">Forgot your password?</a>
-     </div>
-</div>
-<div class="text--center">
-      <el-button :loading="loading" class="form__button" type="primary" style="width:100%;margin-bottom:30px;" @click.native.prevent="handleLogin">Login</el-button>
-</div>
-         <div style="position:relative">
+
+      <el-button :loading="loading" type="primary" style="width:100%;margin-bottom:30px;" @click.native.prevent="handleLogin">Login</el-button>
+
+      <div style="position:relative">
         <div class="tips">
           <span>Username : admin</span>
           <span>Password : any</span>
@@ -102,18 +71,11 @@
       <social-sign />
     </el-dialog>
   </div>
-
-			</div>
-		</div>
-   </div>
-  </div>
-</div>
 </template>
 
 <script>
 import { validUsername } from '@/utils/validate'
 import SocialSign from './components/SocialSignin'
-
 export default {
   name: 'Login',
   components: { SocialSign },
@@ -248,24 +210,20 @@ export default {
 <style lang="scss">
 /* 修复input 背景不协调 和光标变色 */
 /* Detail see https://github.com/PanJiaChen/vue-element-admin/pull/927 */
-
-$bg:#5f697a;
+$bg:#283443;
 $light_gray:#fff;
 $cursor: #fff;
-
 @supports (-webkit-mask: none) and (not (cater-color: $cursor)) {
   .login-container .el-input input {
     color: $cursor;
   }
 }
-
 /* reset element-ui css */
 .login-container {
   .el-input {
     display: inline-block;
-    height: 100%;
-    width: 100%;
-
+    height: 47px;
+    width: 85%;
     input {
       background: transparent;
       border: 0px;
@@ -275,14 +233,12 @@ $cursor: #fff;
       color: $light_gray;
       height: 47px;
       caret-color: $cursor;
-
       &:-webkit-autofill {
         box-shadow: 0 0 0px 1000px $bg inset !important;
         -webkit-text-fill-color: $cursor !important;
       }
     }
   }
-
   .el-form-item {
     border: 1px solid rgba(255, 255, 255, 0.1);
     background: rgba(0, 0, 0, 0.1);
@@ -293,7 +249,7 @@ $cursor: #fff;
 </style>
 
 <style lang="scss" scoped>
-$bg:#2d3a4b;
+$bg:#5f697a;
 $dark_gray:#889aa4;
 $light_gray:#eee;
 .login-container {
