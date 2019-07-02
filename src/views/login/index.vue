@@ -1,4 +1,11 @@
 <template>
+<el-row style="background:#283443;padding:0px 1px 0;margin-bottom:0px;">
+ <el-col :xs="24" :sm="24" :lg="12">
+ 
+      </el-col>
+
+ <el-col :xs="24" :sm="24" :lg="12">
+
   <div class="login-container">
     <el-form ref="loginForm" :model="loginForm" :rules="loginRules" class="login-form" autocomplete="on" label-position="left">
 
@@ -71,6 +78,8 @@
       <social-sign />
     </el-dialog>
   </div>
+  </el-col> 
+ </el-row>
 </template>
 
 <script>
@@ -211,8 +220,8 @@ export default {
 /* 修复input 背景不协调 和光标变色 */
 /* Detail see https://github.com/PanJiaChen/vue-element-admin/pull/927 */
 $bg:#283443;
-$light_gray:#fff;
-$cursor: #fff;
+$light_gray:#cccccc;
+$cursor: #bbbbbb;
 @supports (-webkit-mask: none) and (not (cater-color: $cursor)) {
   .login-container .el-input input {
     color: $cursor;
@@ -249,7 +258,7 @@ $cursor: #fff;
 </style>
 
 <style lang="scss" scoped>
-$bg:#5f697a;
+$bg:#ffffff;
 $dark_gray:#889aa4;
 $light_gray:#eee;
 .login-container {
