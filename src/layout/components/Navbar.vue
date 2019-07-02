@@ -85,6 +85,7 @@ export default {
   position: relative;
   background: #fff;
   box-shadow: 0 1px 4px rgba(0,21,41,.08);
+  border-bottom: 1px solid #e2e6e8;
 
   .hamburger-container {
     line-height: 46px;
@@ -146,7 +147,7 @@ export default {
           cursor: pointer;
           width: 40px;
           height: 40px;
-          border-radius: 10px;
+          border-radius: 50px;
         }
 
         .el-icon-caret-bottom {
