@@ -70,18 +70,20 @@ export default {
 <style lang="scss" scoped>
 .app-breadcrumb.el-breadcrumb {
   display: inline-block;
+   color: #5d7079;
     float: left;
     font-size: 24px;
     line-height: 32px;
     margin-top: 12px;
     margin-bottom: 12px;
-    margin-left: 12px;
+    margin-left: 10px;
     font-weight: 800;
 
   .no-redirect {
-    color: #97a8be;
+    color: #5d7079;
     cursor: text;
-      font-size: 20px;
+    font-weight: 800;
+    font-size: 24px;
   }
 }
 </style>
