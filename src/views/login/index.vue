@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="https://geteverpay.netlify.com/assets/css/login-signup2233.css">
 <div class="panel-wrapper">
 <a href="" class="everpay-logo">Everpay</a>
-<div class="feature-panel feature-panel--enterprise" style="background:url('https://res.cloudinary.com/lmj6rf6tz/image/upload/q_auto:good/v1525911362/bg-img-fforms_lgfgvy.jpg')">
+<div class="feature-panel feature-panel--enterprise">
 <div class="enterprise-panel__content text-center">
 				<h2 class="enterprise-panel__header">
 					<small class="enterprise-panel__subheader">EverPay Enterprise Edition</small>Customized cloud powered commerce
