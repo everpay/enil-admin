@@ -1,6 +1,6 @@
 <template>
 <div class="panel-wrapper">
-<a href="//everpayinc.com" class="everpay-logo">Everpay</a>
+<a href="" class="everpay-logo">Everpay</a>
 
 <div class="feature-panel feature-panel--enterprise" style="background: url('https://res.cloudinary.com/lmj6rf6tz/image/upload/q_auto:good/v1525911362/bg-img-fforms_lgfgvy.jpg') no-repeat 40% 0 / cover">
 
@@ -14,14 +14,13 @@
 				<p class="enterprise-panel__caption text-center">
 					Unlimited users. Unlimited gateways. Unlimited connectivity.
 				</p>
-<a href="https://app.everpayinc.com/user/register" target="_blank" class="enterprise-panel__button m-bottom-md-10">Register for an account.</a>
+<a href="" target="_blank" class="enterprise-panel__button m-bottom-md-10">Register for an account.</a>
 			</div>
 
 			<div class="enterprise-panel__footer">
 				<p class="enterprise-panel__footer__lead">
 					TRUSTED BY THE WORLD'S SMARTEST COMPANIES
 				</p>
-<img src="https://res.cloudinary.com/lmj6rf6tz/image/upload/co_rgb:434c5f,e_colorize:100,o_100/v1522591543/enterprise-logos_ojcwan.png" class="enterprise-panel__logos" />
                         </div>
   </div>
 
@@ -34,7 +33,7 @@
 						<span class="main-panel__switch__text">
 							Don't have an account?
 						</span>
-						<a href="https://app.everpayinc.com/user/register?redir=" class="main-panel__switch__button">
+						<a href="" class="main-panel__switch__button">
 							Get Started
 						</a>
 					</div>
@@ -43,7 +42,7 @@
 
 						<h1 class="main-panel__heading">
 							Welcome Back
-                                                        <small class="main-panel__subheading">
+            <small class="main-panel__subheading">
 							Connect to your dashboard, and manage your payments.
 							</small>
 						</h1>
