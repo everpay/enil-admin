@@ -46,7 +46,7 @@
 
 <script>
 import NavtoolBar from '@/components/NavtoolBar'
-import Search from '@/components/NavbarSearch'
+import Search from './components/HeaderSearch'
 import PanelGroup from './components/PanelGroup'
 import LineChart from './components/LineChart'
 import RaddarChart from './components/RaddarChart'
@@ -79,7 +79,7 @@ export default {
   name: 'DashboardAdmin',
   components: {
     NavtoolBar,
-    NavbarSearch,
+    HeaderSearch,
     PanelGroup,
     LineChart,
     RaddarChart,
@@ -113,6 +113,7 @@ export default {
     top: 0px;
     border: 0;
     right: 0;
+    
   }
 
   .chart-wrapper {
