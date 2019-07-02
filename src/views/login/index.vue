@@ -2,7 +2,7 @@
 <div class="panel-wrapper">
 <a href="" class="everpay-logo">Everpay</a>
 
-<div class="feature-panel feature-panel--enterprise" style="background: url('https://res.cloudinary.com/lmj6rf6tz/image/upload/q_auto:good/v1525911362/bg-img-fforms_lgfgvy.jpg') no-repeat 40% 0 / cover">
+<div class="feature-panel feature-panel--enterprise" style="background:url('https://res.cloudinary.com/lmj6rf6tz/image/upload/q_auto:good/v1525911362/bg-img-fforms_lgfgvy.jpg')">
 
 		<div class="enterprise-panel__content text-center">
 				<h2 class="enterprise-panel__header">
