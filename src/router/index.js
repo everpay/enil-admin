@@ -71,10 +71,6 @@ export const constantRoutes = [
     hidden: true
   },
   {
-      path: '/implicit/callback',
-      component: Auth.handleCallback()
-    },
-  {
     path: '/',
     component: Layout,
     redirect: '/dashboard',
@@ -83,7 +79,7 @@ export const constantRoutes = [
         path: 'dashboard',
         component: () => import('@/views/dashboard/index'),
         name: 'Dashboard',
-        meta: { title: 'Activity', icon: 'dashboard', requiresAuth: 'true', affix: true }
+        meta: { title: 'Activity', icon: 'dashboard', affix: true }
       }
     ]
   },
@@ -95,7 +91,7 @@ export const constantRoutes = [
         path: 'index',
         component: () => import('@/views/elektropay/index'),
         name: 'Elektropay',
-        meta: { title: 'Balances', icon: 'money', requiresAuth: 'true', noCache: true }
+        meta: { title: 'Balances', icon: 'money', noCache: true }
       }
     ]
   },
@@ -107,7 +103,7 @@ export const constantRoutes = [
         path: 'index',
         component: () => import('@/views/history/index'),
         name: 'History',
-        meta: { title: 'Transfers', icon: 'list', requiresAuth: 'true', noCache: true }
+        meta: { title: 'Transfers', icon: 'list', noCache: true }
       }
     ]
   },
@@ -119,7 +115,7 @@ export const constantRoutes = [
         path: 'index',
         component: () => import('@/views/recipients/list'),
         name: 'Recipients',
-        meta: { title: 'Recipients', icon: 'people', requiresAuth: 'true', noCache: true }
+        meta: { title: 'Recipients', icon: 'people', roles: ['admin'], noCache: true }
       }
     ]
   },
@@ -131,7 +127,7 @@ export const constantRoutes = [
         path: 'index',
         component: () => import('@/views/payments/index'),
         name: 'Payments',
-        meta: { title: 'Payments', icon: 'shopping', requiresAuth: 'true', noCache: true }
+        meta: { title: 'Payments', icon: 'shopping', noCache: true }
       }
     ]
   },
@@ -143,7 +139,39 @@ export const constantRoutes = [
         path: 'index',
         component: () => import('@/views/invoices/index'),
         name: 'Invoices',
-        meta: { title: 'Invoices', icon: 'pdf', requiresAuth: 'true', noCache: true }
+        meta: { title: 'Invoices', icon: 'pdf', noCache: true }
+      }
+    ]
+  },
+{
+    path: '/product',
+    component: Layout,
+    redirect: '/product/list',
+    name: 'Product',
+    meta: {
+      title: 'Product',
+      icon: 'example',
+      roles: ['admin']
+    },
+    children: [
+      {
+        path: 'create',
+        component: () => import('@/views/product/create'),
+        name: 'CreateProduct',
+        meta: { title: 'Create Product', icon: 'edit' }
+      },
+      {
+        path: 'edit/:id(\\d+)',
+        component: () => import('@/views/product/edit'),
+        name: 'EditProduct',
+        meta: { title: 'Edit Article', noCache: true, activeMenu: '/example/list' },
+        hidden: true
+      },
+      {
+        path: 'list',
+        component: () => import('@/views/product/list'),
+        name: 'ProductList',
+        meta: { title: 'Product List', icon: 'list' }
       }
     ]
   },
@@ -155,7 +183,7 @@ export const constantRoutes = [
         path: 'index',
         component: () => import('@/views/documentation/index'),
         name: 'Documentation',
-        meta: { title: 'Documentation', icon: 'documentation', requiresAuth: 'true', affix: true }
+        meta: { title: 'Documentation', icon: 'documentation', affix: true }
       }
     ]
   },
@@ -168,7 +196,7 @@ export const constantRoutes = [
         path: 'index',
         component: () => import('@/views/guide/index'),
         name: 'Guide',
-        meta: { title: 'Guide', icon: 'guide', requiresAuth: 'true', noCache: true }
+        meta: { title: 'Guide', icon: 'guide', noCache: true }
       }
     ]
   },
@@ -182,7 +210,7 @@ export const constantRoutes = [
         path: 'index',
         component: () => import('@/views/profile/index'),
         name: 'Profile',
-        meta: { title: 'Profile', icon: 'user', requiresAuth: 'true', noCache: true }
+        meta: { title: 'Profile', icon: 'user', noCache: true }
       }
     ]
   }
@@ -243,7 +271,7 @@ export const asyncRoutes = [
         path: 'index',
         component: () => import('@/views/icons/index'),
         name: 'Icons',
-        meta: { title: 'Icons', icon: 'icon', requiresAuth: 'true', noCache: true }
+        meta: { title: 'Icons', icon: 'icon', noCache: true }
       }
     ]
   },
