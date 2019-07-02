@@ -1,4 +1,6 @@
 <template>
+
+<link rel="stylesheet" href="https://geteverpay.netlify.com/assets/css/login-signup2233.css">
 <div class="panel-wrapper">
 <a href="" class="everpay-logo">Everpay</a>
 
