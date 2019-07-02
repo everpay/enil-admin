@@ -1,7 +1,7 @@
 <template>
   <div class="dashboard-editor-container">
 
-    <el-row :gutter="8">
+    <el-row class="navtool-bar" :gutter="8">
     <el-col :xs="12" :sm="12" :lg="12"></el-col>
     <el-col :xs="12" :sm="12" :lg="12">
       <search id="header-search" class="navbar-search" />
@@ -107,7 +107,6 @@ export default {
   }
 
   .navbar-search {
-    position: absolute;
     top: 0px;
     border: 0;
     right: 0;
