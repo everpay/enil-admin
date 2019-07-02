@@ -81,6 +81,19 @@ div:focus {
   cursor: pointer;
 }
 
+.profile-name {
+    max-width: 240px;
+    display: inline-block;
+}
+
+.text-ellipsis, .text-ellipses {
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
 .nav-toolbar {
     margin-top: 0;
     background-color: #fff;
