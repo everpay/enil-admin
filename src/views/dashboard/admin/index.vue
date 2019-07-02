@@ -3,7 +3,7 @@
 
     <el-row class="nav-toolbar" :gutter="8">
       <el-col :xs="12" :sm="12" :lg="12">
-    <navtool-bar class="navtool-bar" />
+    <navtool-bar />
     </el-col>
     <el-col :xs="12" :sm="12" :lg="12">
     <search id="header-search" class="navbar-search" />
