@@ -110,7 +110,7 @@ export default {
         line-height: 16px;
         color: #212121;
         top: 15px;
-      }
+        }
       
   .m-l-1 {
     margin-left: 8px !important;
