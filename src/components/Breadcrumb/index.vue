@@ -74,7 +74,7 @@ export default {
     float: left;
     font-size: 24px;
     line-height: 32px;
-    margin-top: 12px;
+    margin-top: 10px;
     margin-bottom: 12px;
     margin-left: 10px;
     font-weight: 800;
