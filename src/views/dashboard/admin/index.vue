@@ -6,7 +6,7 @@
       
     </el-col>
     <el-col :xs="12" :sm="12" :lg="12">
-    <search id="header-search" class="navbar-search" />
+    
         </el-col>
      </div>
     </el-row>
