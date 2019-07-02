@@ -8,8 +8,7 @@
     <el-col :xs="12" :sm="12" :lg="12">
     
         </el-col>
-     </div>
-    </el-row>
+     </el-row>
     
     <panel-group @handleSetLineChartData="handleSetLineChartData" />
 
@@ -39,8 +38,8 @@
       <el-col :xs="{span: 12}" :sm="{span: 12}" :md="{span: 12}" :lg="{span: 12}" :xl="{span: 12}" style="padding-right:8px;margin-bottom:30px;">
         <transaction-table />
       </el-col>
-
     </el-row>
+    
   </div>
 </template>
 
