@@ -80,7 +80,7 @@ export default {
 
 <style lang="scss" scoped>
 .navbar {
-  height: 50px;
+  height: 60px;
   overflow: hidden;
   position: relative;
   background: #fff;
@@ -111,7 +111,7 @@ export default {
   .right-menu {
     float: right;
     height: 100%;
-    line-height: 50px;
+    line-height: 58px;
 
     &:focus {
       outline: none;
@@ -139,7 +139,7 @@ export default {
       margin-right: 30px;
 
       .avatar-wrapper {
-        margin-top: -15px;
+        margin-top: 10px;
         position: relative;
 
         .user-avatar {
