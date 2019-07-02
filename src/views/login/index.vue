@@ -10,7 +10,7 @@
     <el-form ref="loginForm" :model="loginForm" :rules="loginRules" class="login-form" autocomplete="on" label-position="left">
 
       <div class="title-container">
-        <h3 class="title">Login Form</h3>
+   <h1 class="title">Welcome Back<small class="main-panel__subheading">Connect to your dashboard, and manage your payments.</small></h1>
       </div>
 
       <el-form-item prop="username">
@@ -231,11 +231,12 @@ $cursor: #bbbbbb;
 .login-container {
   .el-input {
     display: inline-block;
-    height: 47px;
+    height: 48px;
     width: 85%;
     input {
-      background: transparent;
-      border: 0px;
+    background-color: #ecf2f4!important;
+    border-radius: 0.2rem;
+    border: none;
       -webkit-appearance: none;
       border-radius: 0px;
       padding: 12px 5px 12px 15px;
@@ -284,6 +285,12 @@ $light_gray:#eee;
       }
     }
   }
+  .main-panel__heading {
+    font-size: 36px;
+    font-weight: 700;
+    color: #434C5F;
+    margin-bottom: 20px;
+}
 .height-lg-100vh {
     height: 100vh;
 }
