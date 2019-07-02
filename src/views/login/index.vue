@@ -1,10 +1,10 @@
 <template>
 <el-row :gutter="48" class="height-lg-100vh" style="background:#283443;padding:0px 1px 0;margin-bottom:0px;">
- <el-col class="paneL float-left d-lg-flex align-items-center gradient-half-success-v1 height-lg-100vh px-0" :xs="24" :sm="24" :md="8" :lg="8">
+ <el-col class="paneL height-lg-100vh" :xs="24" :sm="24" :md="8" :lg="8">
  
       </el-col>
 
- <el-col class="paneR float-right" :xs="24" :sm="24" :md="16" :lg="16">
+ <el-col class="paneR" :xs="24" :sm="24" :md="16" :lg="16">
 <div class="main-panel__content">
   <div class="login-container">
     <el-form ref="loginForm" :model="loginForm" :rules="loginRules" class="login-form" autocomplete="on" label-position="left">
