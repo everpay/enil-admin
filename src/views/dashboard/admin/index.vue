@@ -5,9 +5,9 @@
       <el-col :xs="12" :sm="12" :lg="12">
       
     </el-col>
-    <el-col :xs="12" :sm="12" :lg="12">
-    <search id="header-search" class="navbar-search" />
-     </el-col>
+    <el-col class="navbar-search" :xs="12" :sm="12" :lg="12">
+    
+        </el-col>
      </div>
     </el-row>
     
@@ -45,7 +45,6 @@
 </template>
 
 <script>
-import Search from './components/HeaderSearch'
 import PanelGroup from './components/PanelGroup'
 import LineChart from './components/LineChart'
 import RaddarChart from './components/RaddarChart'
