@@ -1,10 +1,10 @@
 <template>
-<el-row :gutter="48" style="background:#283443;padding:0px 1px 0;margin-bottom:0px;height:100%;">
- <el-col :xs="24" :sm="24" :md="{span: 12}" :lg="12">
+<el-row :gutter="48" class="height-lg-100vh" style="background:#283443;padding:0px 1px 0;margin-bottom:0px;">
+ <el-col class="paneL float-left d-lg-flex align-items-center gradient-half-success-v1 height-lg-100vh px-0" :xs="24" :sm="24" :md="8" :lg="8">
  
       </el-col>
 
- <el-col :xs="24" :sm="24" :md="{span: 12}" :lg="12">
+ <el-col class="paneR float-right" :xs="24" :sm="24" :md="16" :lg="16">
 
   <div class="login-container">
     <el-form ref="loginForm" :model="loginForm" :rules="loginRules" class="login-form" autocomplete="on" label-position="left">
@@ -283,6 +283,34 @@ $light_gray:#eee;
         margin-right: 16px;
       }
     }
+  }
+.height-lg-100vh {
+    height: 100vh;
+}
+  .d-lg-flex {
+    display: -ms-flexbox !important;
+    display: flex !important;
+}
+.gradient-half-primary-v1 {
+    background-image: linear-gradient(150deg, #2d1582 0%, #19a0ff 100%);
+    background-repeat: repeat-x;
+}
+.pl-0, .px-0 {
+    padding-left: 0 !important;
+}
+.pr-0, .px-0 {
+    padding-right: 0 !important;
+}
+.align-items-center {
+    -ms-flex-align: center !important;
+    align-items: center !important;
+}
+
+.paneL{
+    position: relative;
+  }
+  .paneR{
+    position: relative;
   }
   .svg-container {
     padding: 6px 5px 6px 15px;
