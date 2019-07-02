@@ -1,10 +1,10 @@
 <template>
 <el-row style="background:#283443;padding:0px 1px 0;margin-bottom:0px;">
- <el-col :xs="24" :sm="24" :lg="12">
+ <el-col :xs="24" :sm="24" :md="{span: 12}" :lg="12">
  
       </el-col>
 
- <el-col :xs="24" :sm="24" :lg="12">
+ <el-col :xs="24" :sm="24" :md="{span: 12}" :lg="12">
 
   <div class="login-container">
     <el-form ref="loginForm" :model="loginForm" :rules="loginRules" class="login-form" autocomplete="on" label-position="left">
