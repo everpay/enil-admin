@@ -72,7 +72,7 @@ export default {
   display: inline-block;
    color: #5d7079;
     float: left;
-    font-size: 24px;
+    font-size: 21.75px;
     line-height: 32px;
     margin-top: 10px;
     margin-bottom: 12px;
@@ -83,7 +83,7 @@ export default {
     color: #5d7079;
     cursor: text;
     font-weight: 800;
-    font-size: 24px;
+    font-size: 21.755px;
   }
 }
 </style>
