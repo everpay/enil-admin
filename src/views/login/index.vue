@@ -10,7 +10,7 @@
     <el-form ref="loginForm" :model="loginForm" :rules="loginRules" class="login-form" autocomplete="on" label-position="left">
 
       <div class="title-container">
-   <h1 class="title">Welcome Back<small class="main-panel__subheading">Connect to your dashboard, and manage your payments.</small></h1>
+   <h1 class="title">Welcome Back<br><small class="main-panel__subheading">Connect to your dashboard, and manage your account</small></h1>
       </div>
 <div class="box-highlight">
       <el-form-item prop="username">
