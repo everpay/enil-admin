@@ -1,6 +1,16 @@
 <template>
   <div class="dashboard-editor-container">
 
+    <el-row class="nav-toolbar" :gutter="8">
+      <el-col :xs="12" :sm="12" :lg="12">
+    <navtool-bar class="navtool-bar" />
+    </el-col>
+    <el-col :xs="12" :sm="12" :lg="12">
+    <search id="navbar-search" class="navbar-search" />
+     </el-col>
+     </div>
+    </el-row>
+    
     <panel-group @handleSetLineChartData="handleSetLineChartData" />
 
     <el-row style="background:#fff;padding:16px 16px 0;margin-bottom:32px;">
@@ -36,6 +46,7 @@
 
 <script>
 import NavtoolBar from '@/components/NavtoolBar'
+import Search from '@/components/NavbarSearch'
 import PanelGroup from './components/PanelGroup'
 import LineChart from './components/LineChart'
 import RaddarChart from './components/RaddarChart'
@@ -67,7 +78,8 @@ const lineChartData = {
 export default {
   name: 'DashboardAdmin',
   components: {
-    GithubCorner,
+    NavtoolBar,
+    NavbarSearch,
     PanelGroup,
     LineChart,
     RaddarChart,
@@ -96,7 +108,7 @@ export default {
   background-color: rgb(240, 242, 245);
   position: relative;
 
-  .github-corner {
+  .navtool-bar {
     position: absolute;
     top: 0px;
     border: 0;
