@@ -16,7 +16,7 @@ export default {
         el.parentNode && el.parentNode.removeChild(el)
       }
     } else {
-      throw new Error(`need roles! Like v-permission="['admin','personal','business','developer','partner']"`)
+      throw new Error(`need roles! Like v-permission="['admin','editor']"`)
     }
   }
 }

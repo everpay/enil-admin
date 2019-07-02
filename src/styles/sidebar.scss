@@ -52,16 +52,9 @@
       width: 100%;
       overflow: hidden;
     }
-a:focus,
-a:hover {
-  cursor: pointer;
-  color: #cecece;
-  text-decoration: none;
-}
 
     .svg-icon {
-      margin-right: 18px;
-      margin-left: 18px;
+      margin-right: 16px;
     }
 
     .el-menu {
@@ -122,7 +115,7 @@ a:hover {
         padding: 0 !important;
 
         .svg-icon {
-          margin-left: 25px;
+          margin-left: 20px;
         }
 
         .el-submenu__icon-arrow {

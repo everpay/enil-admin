@@ -6,8 +6,15 @@
 
     <div class="right-menu">
       <template v-if="device!=='mobile'">
+        <search id="header-search" class="right-menu-item" />
 
         <error-log class="errLog-container right-menu-item hover-effect" />
+
+        <screenfull id="screenfull" class="right-menu-item hover-effect" />
+
+        <el-tooltip content="Global Size" effect="dark" placement="bottom">
+          <size-select id="size-select" class="right-menu-item hover-effect" />
+        </el-tooltip>
 
       </template>
 
@@ -23,6 +30,9 @@
           <router-link to="/">
             <el-dropdown-item>Dashboard</el-dropdown-item>
           </router-link>
+          <a target="_blank" href="https://github.com/PanJiaChen/vue-element-admin/">
+            <el-dropdown-item>Github</el-dropdown-item>
+          </a>
           <a target="_blank" href="https://panjiachen.github.io/vue-element-admin-site/#/">
             <el-dropdown-item>Docs</el-dropdown-item>
           </a>
@@ -40,12 +50,18 @@ import { mapGetters } from 'vuex'
 import Breadcrumb from '@/components/Breadcrumb'
 import Hamburger from '@/components/Hamburger'
 import ErrorLog from '@/components/ErrorLog'
+import Screenfull from '@/components/Screenfull'
+import SizeSelect from '@/components/SizeSelect'
+import Search from '@/components/HeaderSearch'
 
 export default {
   components: {
     Breadcrumb,
     Hamburger,
-    ErrorLog
+    ErrorLog,
+    Screenfull,
+    SizeSelect,
+    Search
   },
   computed: {
     ...mapGetters([
@@ -68,14 +84,14 @@ export default {
 
 <style lang="scss" scoped>
 .navbar {
-  height: 60px;
+  height: 50px;
   overflow: hidden;
   position: relative;
   background: #fff;
   box-shadow: 0 1px 4px rgba(0,21,41,.08);
 
   .hamburger-container {
-    line-height: 58px;
+    line-height: 46px;
     height: 100%;
     float: left;
     cursor: pointer;
@@ -99,7 +115,7 @@ export default {
   .right-menu {
     float: right;
     height: 100%;
-    line-height: 60px;
+    line-height: 50px;
 
     &:focus {
       outline: none;
@@ -107,7 +123,7 @@ export default {
 
     .right-menu-item {
       display: inline-block;
-      padding: 0 11px;
+      padding: 0 8px;
       height: 100%;
       font-size: 18px;
       color: #5a5e66;
@@ -127,7 +143,7 @@ export default {
       margin-right: 30px;
 
       .avatar-wrapper {
-        margin-top: 10px;
+        margin-top: 5px;
         position: relative;
 
         .user-avatar {
@@ -141,8 +157,8 @@ export default {
           cursor: pointer;
           position: absolute;
           right: -20px;
-          top: 15px;
-          font-size: 14px;
+          top: 25px;
+          font-size: 12px;
         }
       }
     }
