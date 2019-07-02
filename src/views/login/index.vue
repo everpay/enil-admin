@@ -12,7 +12,7 @@
       <div class="title-container">
    <h1 class="title">Welcome Back<small class="main-panel__subheading">Connect to your dashboard, and manage your payments.</small></h1>
       </div>
-
+<div class="box-highlight">
       <el-form-item prop="username">
         <span class="svg-container">
           <svg-icon icon-class="user" />
@@ -52,6 +52,7 @@
         </el-form-item>
       </el-tooltip>
 
+</div>
       <el-button :loading="loading" type="primary" style="width:100%;margin-bottom:30px;" @click.native.prevent="handleLogin">Login</el-button>
 
       <div style="position:relative">
@@ -312,13 +313,17 @@ $light_gray:#eee;
     -ms-flex-align: center !important;
     align-items: center !important;
 }
-
+.box-highlight {
+    margin-top: 10px;
+    background: #fff;
+    border-radius: 25px;
+    padding-right: 0px!important;
+    padding-left: 0px;
+}
 .paneL{
-    position: relative;
   float: left;
   }
   .paneR{
-    position: relative; 
   float: right;
   }
   .svg-container {
