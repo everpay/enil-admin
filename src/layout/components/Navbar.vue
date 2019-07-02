@@ -1,6 +1,6 @@
 <template>
   <div class="navbar">
-
+    <hamburger id="hamburger-container" :is-active="sidebar.opened" class="" />
     <breadcrumb id="breadcrumb-container" class="breadcrumb-container" />
 
     <div class="right-menu">
@@ -126,7 +126,7 @@ export default {
       margin-right: 30px;
 
       .avatar-wrapper {
-        margin-top: -5px;
+        margin-top: -10px;
         position: relative;
 
         .user-avatar {
@@ -140,8 +140,8 @@ export default {
           cursor: pointer;
           position: absolute;
           right: -20px;
-          top: 15px;
-          font-size: 14px;
+          top: 20px;
+          font-size: 16px;
         }
       }
     }
