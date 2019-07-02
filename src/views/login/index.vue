@@ -308,9 +308,11 @@ $light_gray:#eee;
 
 .paneL{
     position: relative;
+  float: left;
   }
   .paneR{
-    position: relative;
+    position: relative; 
+  float: right;
   }
   .svg-container {
     padding: 6px 5px 6px 15px;
