@@ -1,12 +1,12 @@
 <template>
-<el-row :gutter="48" style="background:#283443;padding:0px 1px 0;margin-bottom:0px;">
+<el-row :gutter="48">
  <el-col :xs="24" :sm="24" :md="12" :lg="12">
- <div class="paneL">
+ <div class="paneL" style="background:#048864;padding:0;margin-bottom:0px;">
  </div>
       </el-col>
 
  <el-col :xs="24" :sm="24" :md="12" :lg="12">
- <div class="paneR">
+ <div class="paneR" style="background:#ffffff;padding:0px 1px 0;margin-bottom:0px;">
 <div class="main-panel__content">
   <div class="login-container">
     <el-form ref="loginForm" :model="loginForm" :rules="loginRules" class="login-form" autocomplete="on" label-position="left">
@@ -231,7 +231,7 @@ $cursor: #bbbbbb;
     width: 85%;
     input {
     background: transparent;
-    border-radius: 0.2rem;
+    border-radius: 0.25rem;
     border: none;
       -webkit-appearance: none;
       border-radius: 0px;
@@ -270,6 +270,16 @@ $light_gray:#eee;
     padding: 160px 35px 0;
     margin: 0 auto;
     overflow: hidden;
+  }
+  .paneL{
+  float: left;
+  background-color: #048864;
+  color: #fcfcfc;
+}
+  }
+  .paneR{
+  float: right;
+  background:#ffffff;
   }
   .tips {
     font-size: 14px;
@@ -322,12 +332,6 @@ $light_gray:#eee;
     padding-right: 0px!important;
     padding-left: 0px;
 }
-.paneL{
-  float: left;
-  }
-  .paneR{
-  float: right;
-  }
   .svg-container {
     padding: 6px 5px 6px 15px;
     color: $dark_gray;
