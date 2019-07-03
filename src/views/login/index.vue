@@ -1,10 +1,12 @@
 <template>
-<el-row :gutter="48" class="height-lg-100vh" style="background:#283443;padding:0px 1px 0;margin-bottom:0px;">
- <el-col class="paneL height-lg-100vh" :xs="24" :sm="24" :md="8" :lg="8">
- 
+<el-row :gutter="48" style="background:#283443;padding:0px 1px 0;margin-bottom:0px;">
+ <el-col :xs="24" :sm="24" :md="12" :lg="12">
+ <div class="paneL">
+ </div>
       </el-col>
 
- <el-col class="paneR" :xs="24" :sm="24" :md="16" :lg="16">
+ <el-col :xs="24" :sm="24" :md="12" :lg="12">
+ <div class="paneR">
 <div class="main-panel__content">
   <div class="login-container">
     <el-form ref="loginForm" :model="loginForm" :rules="loginRules" class="login-form" autocomplete="on" label-position="left">
@@ -56,16 +58,7 @@
    <el-button :loading="loading" type="success" style="width:100%;margin-bottom:30px;" @click.native.prevent="handleLogin">Login</el-button>
 </div>
 
-      <div style="position:relative">
-        <div class="tips">
-          <span>Username : admin</span>
-          <span>Password : any</span>
-        </div>
-        <div class="tips">
-          <span style="margin-right:18px;">Username : editor</span>
-          <span>Password : any</span>
-        </div>
-
+      <div style="position:relative;text-align:center">
         <el-button class="thirdparty-button" type="primary" @click="showDialog=true">
           Or connect with
         </el-button>
@@ -79,7 +72,8 @@
       <br>
       <social-sign />
     </el-dialog>
-  </div>
+</div>
+</div>
   </el-col> 
  </el-row>
 </template>
@@ -236,7 +230,7 @@ $cursor: #bbbbbb;
     height: 48px;
     width: 85%;
     input {
-    background: #ecf2f4;
+    background: transparent;
     border-radius: 0.2rem;
     border: none;
       -webkit-appearance: none;
@@ -262,7 +256,7 @@ $cursor: #bbbbbb;
 
 <style lang="scss" scoped>
 $bg:#ffffff;
-$dark_gray:#889aa4;
+$dark_gray:#283443;
 $light_gray:#eee;
 .login-container {
   min-height: 100%;
@@ -271,7 +265,7 @@ $light_gray:#eee;
   overflow: hidden;
   .login-form {
     position: relative;
-    width: 520px;
+    width: 480px;
     max-width: 100%;
     padding: 160px 35px 0;
     margin: 0 auto;
@@ -292,6 +286,7 @@ $light_gray:#eee;
     width: 90%;
     max-width: 540px;
     margin: 0 auto;
+    padding-bottom: 100px;
 }
   .main-panel__heading {
     font-size: 36px;
@@ -343,8 +338,8 @@ $light_gray:#eee;
   .title-container {
     position: relative;
     .title {
-      font-size: 26px;
-      color: $light_gray;
+      font-size: 28px;
+      color: $dark_gray;
       margin: 0px auto 40px auto;
       text-align: center;
       font-weight: bold;
@@ -366,6 +361,9 @@ $light_gray:#eee;
   }
   @media only screen and (max-width: 470px) {
     .thirdparty-button {
+      display: none;
+    }
+    .paneL {
       display: none;
     }
   }
