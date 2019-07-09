@@ -1,11 +1,20 @@
 <template>
+<el-row :gutter="48">
+ <el-col :xs="24" :sm="24" :md="12" :lg="12">
+ <div class="paneL" style="background:#048864;padding:0;margin-bottom:0px;">
+ </div>
+      </el-col>
+
+ <el-col :xs="24" :sm="24" :md="12" :lg="12">
+ <div class="paneR" style="background:#ffffff;padding:0px 1px 0;margin-bottom:0px;">
+<div class="main-panel__content">
   <div class="login-container">
     <el-form ref="loginForm" :model="loginForm" :rules="loginRules" class="login-form" autocomplete="on" label-position="left">
 
       <div class="title-container">
-        <h3 class="title">Login Form</h3>
+   <h1 class="title">Welcome Back<br><small class="main-panel__subheading">Connect to your dashboard, and manage your account</small></h1>
       </div>
-
+<div class="box-highlight">
       <el-form-item prop="username">
         <span class="svg-container">
           <svg-icon icon-class="user" />
@@ -45,18 +54,11 @@
         </el-form-item>
       </el-tooltip>
 
-      <el-button :loading="loading" type="primary" style="width:100%;margin-bottom:30px;" @click.native.prevent="handleLogin">Login</el-button>
+</div>
+   <el-button :loading="loading" type="success" style="width:100%;margin-bottom:30px;" @click.native.prevent="handleLogin">Login</el-button>
+</div>
 
-      <div style="position:relative">
-        <div class="tips">
-          <span>Username : admin</span>
-          <span>Password : any</span>
-        </div>
-        <div class="tips">
-          <span style="margin-right:18px;">Username : editor</span>
-          <span>Password : any</span>
-        </div>
-
+      <div style="position:relative;text-align:center">
         <el-button class="thirdparty-button" type="primary" @click="showDialog=true">
           Or connect with
         </el-button>
@@ -70,13 +72,15 @@
       <br>
       <social-sign />
     </el-dialog>
-  </div>
+</div>
+</div>
+  </el-col> 
+ </el-row>
 </template>
 
 <script>
 import { validUsername } from '@/utils/validate'
 import SocialSign from './components/SocialSignin'
-
 export default {
   name: 'Login',
   components: { SocialSign },
@@ -211,44 +215,39 @@ export default {
 <style lang="scss">
 /* 修复input 背景不协调 和光标变色 */
 /* Detail see https://github.com/PanJiaChen/vue-element-admin/pull/927 */
-
 $bg:#283443;
-$light_gray:#fff;
-$cursor: #fff;
-
+$light_gray:#cccccc;
+$cursor: #bbbbbb;
 @supports (-webkit-mask: none) and (not (cater-color: $cursor)) {
   .login-container .el-input input {
     color: $cursor;
   }
 }
-
 /* reset element-ui css */
 .login-container {
   .el-input {
     display: inline-block;
-    height: 47px;
+    height: 48px;
     width: 85%;
-
     input {
-      background: transparent;
-      border: 0px;
+    background: transparent;
+    border-radius: 0.25rem;
+    border: none;
       -webkit-appearance: none;
       border-radius: 0px;
       padding: 12px 5px 12px 15px;
       color: $light_gray;
-      height: 47px;
+      height: 48px;
       caret-color: $cursor;
-
       &:-webkit-autofill {
         box-shadow: 0 0 0px 1000px $bg inset !important;
         -webkit-text-fill-color: $cursor !important;
       }
     }
   }
-
   .el-form-item {
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    background: rgba(0, 0, 0, 0.1);
+    border: 0px solid rgba(255, 255, 255, 0.1);
+    background: transparent;
     border-radius: 5px;
     color: #454545;
   }
@@ -256,37 +255,83 @@ $cursor: #fff;
 </style>
 
 <style lang="scss" scoped>
-$bg:#2d3a4b;
-$dark_gray:#889aa4;
+$bg:#ffffff;
+$dark_gray:#283443;
 $light_gray:#eee;
-
 .login-container {
   min-height: 100%;
   width: 100%;
   background-color: $bg;
   overflow: hidden;
-
   .login-form {
     position: relative;
-    width: 520px;
+    width: 480px;
     max-width: 100%;
     padding: 160px 35px 0;
     margin: 0 auto;
     overflow: hidden;
   }
-
+  .paneL{
+  float: left;
+  background-color: #048864;
+  color: #fcfcfc;
+}
+  }
+  .paneR{
+  float: right;
+  background:#ffffff;
+  }
   .tips {
     font-size: 14px;
     color: #fff;
     margin-bottom: 10px;
-
     span {
       &:first-of-type {
         margin-right: 16px;
       }
     }
   }
-
+  .main-panel__content {
+    clear: both;
+    width: 90%;
+    max-width: 540px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+  .main-panel__heading {
+    font-size: 36px;
+    font-weight: 700;
+    color: #434C5F;
+    margin-bottom: 20px;
+}
+.height-lg-100vh {
+    height: 100vh;
+}
+.d-lg-flex {
+    display: -ms-flexbox !important;
+    display: flex !important;
+}
+.gradient-half-primary-v1 {
+    background-image: linear-gradient(150deg, #2d1582 0%, #19a0ff 100%);
+    background-repeat: repeat-x;
+}
+.pl-0, .px-0 {
+    padding-left: 0 !important;
+}
+.pr-0, .px-0 {
+    padding-right: 0 !important;
+}
+.align-items-center {
+    -ms-flex-align: center !important;
+    align-items: center !important;
+}
+.box-highlight {
+    margin-top: 10px;
+    background: #fff;
+    border-radius: 25px;
+    padding-right: 0px!important;
+    padding-left: 0px;
+}
   .svg-container {
     padding: 6px 5px 6px 15px;
     color: $dark_gray;
@@ -294,19 +339,16 @@ $light_gray:#eee;
     width: 30px;
     display: inline-block;
   }
-
   .title-container {
     position: relative;
-
     .title {
-      font-size: 26px;
-      color: $light_gray;
+      font-size: 28px;
+      color: $dark_gray;
       margin: 0px auto 40px auto;
       text-align: center;
       font-weight: bold;
     }
   }
-
   .show-pwd {
     position: absolute;
     right: 10px;
@@ -316,15 +358,16 @@ $light_gray:#eee;
     cursor: pointer;
     user-select: none;
   }
-
   .thirdparty-button {
     position: absolute;
     right: 0;
     bottom: 6px;
   }
-
   @media only screen and (max-width: 470px) {
     .thirdparty-button {
+      display: none;
+    }
+    .paneL {
       display: none;
     }
   }
