@@ -95,9 +95,10 @@ export const constantRoutes = [
    {
     path: '/history',
     component: Layout,
+    redirect: '/history', 
     children: [
       {
-        path: 'history/index',
+        path: 'history',
         component: () => import('@/views/history/index'),
         name: 'History',
         meta: { title: 'Transfers', icon: 'list', noCache: true }
@@ -144,7 +145,7 @@ export const constantRoutes = [
     path: '/profile',
     component: Layout,
     redirect: '/profile/index',
-    hidden: true,
+    hidden: false,
     children: [
       {
         path: 'index',
